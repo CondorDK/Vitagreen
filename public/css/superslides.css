@@ -1,0 +1,33 @@
+html,
+body  {
+    background: url("../images/fondos.png") no-repeat center center fixed;
+    content: "";
+    /*filter: alpha(opacity=30);*/
+    /*IE*/
+    /*-moz-opacity-: 0.3;*/
+    /*Mozilla*/
+    /*opacity: 0.3;*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -100;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel,
+.slide,
+.carousel-indicators,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    /*width: 100%;*/
+    margin: auto;
+    margin-top: -70px;
+    max-width: 2045px;
+    max-height: 1560px;
+  
