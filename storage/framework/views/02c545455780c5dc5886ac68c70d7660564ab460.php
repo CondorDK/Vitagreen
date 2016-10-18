@@ -1,71 +1,209 @@
+<?php $__env->startSection('title', '| Home'); ?>
+
 <?php $__env->startSection('content'); ?>
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Welcome</div>
 
-               
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- Fontawesome -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
 
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img id="kappaimg" src="../images/slides1.png" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Slide 1</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img id="kappaimg" src="../images/slides2.png" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Chania</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img id="kappaimg" src="../images/slides3.png" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Flowers</h3>
-        <p>Beatiful flowers in Kolymbari, Crete.</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img id="kappaimg" src="../images/slides4.png" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Flowers</h3>
-        <p>Demasiado picky picky picky picky</p>
-      </div>
-    </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Siguiente</span>
-  </a>
+    <!-- Carousel -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol>
+      <!-- Wrapper for slides -->
+<div class="carousel-inner">
+  <div class="item active">
+    <img src="../images/slides1.png" alt="First slide">
+            <!-- Static Header -->
+            <div class="header-text hidden-xs">
+                <div class="col-md-12 text-center">
+                <h2><span>Bienvenido a Vitagreen</span></h2>
+                    <br>
+                <h3><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></h3>
+                    <br>
+              <div class="">
+                <a class="btn btn-theme btn-sm btn-min-block" href="#">Hola</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Como</a>
+          </div>
+       </div>
+   </div><!-- /header-text -->
 </div>
+
+          <div class="item">
+            <img src="../images/slides2.png" alt="Second slide">
+            <!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                                <span>Awesome </span>
+                            </h2>
+                            <br>
+                            <h3>
+                              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </h3>
+                            <br>
+                            <div class="">
+                                 <a class="btn btn-theme btn-sm btn-min-block" href="#about">Estas</a><a class="btn btn-theme btn-sm btn-min-block" href="#works">KAJAJJAJA</a></div>
+                        </div>
+                    </div><!-- /header-text -->
+          </div>
+          <div class="item">
+            <img src="../images/slides3.png" alt="Third slide">
+            <!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                                <span>Use without any charge</span>
+                            </h2>
+                            <br>
+                            <h3>
+                              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </h3>
+                            <br>
+                            <div class="">
+                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">Espero</a><a class="btn btn-theme btn-sm btn-min-block" href="#works">Que</a></div>
+                        </div>
+                    </div><!-- /header-text -->
+          </div>
+          <div class="item">
+            <img src="../images/slides4.png" alt="Fourt slide">
+            <!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                                <span>Use without any charge</span>
+                            </h2>
+                            <br>
+                            <h3>
+                              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </h3>
+                            <br>
+                            <div class="">
+                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">Bien</a><a class="btn btn-theme btn-sm btn-min-block" href="#works">JAJAJJAJAJJA</a></div>
+                        </div>
+                    </div><!-- /header-text -->
+          </div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div><!-- /carousel -->
+
+  <!-- Section: Materiales De Nuestra Pagina -->
+<section id="service" class="home-section color-dark bg-gray">
+    <div class="container marginbot-50">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+            <div class="section-heading text-center">
+            <h2 class="h-bold">Materiales</h2>
+            <div class="divider-header"></div>
+            <p>Lorem ipsum dolor sit amet, agam perfecto sensibus usu at duo ut iriure.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+</div>
+
+<div class="text-center">
+    <div class="container">
+      <div class="row">
+            <div class="col-md-3 ">
+                <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="service-box">
+                  <div><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular">
+                      <h5>Mayonesa</h5>
+                      <p>
+                      Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                      </p>
+                      <a href="#" class="btn btn-skin">Ver Más</a>
+                    </div>
+                </div>
+             </div>
+          </div>
+
+            <div class="col-md-3 ">
+                <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="service-box">
+                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular">
+                        <h5>Mayonesa</h5>
+                        <p>
+                        Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                        </p>
+                        <a href="#" class="btn btn-skin">Ver Más</a>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+            <div class="col-md-3 ">
+                <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="service-box">
+                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular">
+                        <h5>Mayonesa</h5>
+                        <p>
+                        Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                        </p>
+                        <a href="#" class="btn btn-skin">Ver Más</a>
+                   </div>
+                </div>
+             </div>
+          </div>
+            <div class="col-md-3">
+                <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="service-box">
+                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular">
+                        <h5>Mayonesa</h5>
+                        <p>
+                        Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                        </p>
+                        <a href="#" class="btn btn-skin">Ver Más</a>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>    
+    </div>
+</div>
+
+</section>
+  <!-- /Section: services -->
+  
+  <!-- footer -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          
+          <div class="text-center">
+            <a href="#" class="totop"><i class="fa fa-angle-up fa-3x"></i></a>
+
+            <p>Frondizi, Inc. 174 , Suite 600 San Francisco, CA 94107<br />
+            &copy;Copyright 2016 - Vitagreen. Designed by <a href="http://www.google.com.ar">Informatorio</a></p>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <!-- Archivos Core JavaScript -->
+
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.easing.min.js"></script> 
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/stellar.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/demo.js"></script>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

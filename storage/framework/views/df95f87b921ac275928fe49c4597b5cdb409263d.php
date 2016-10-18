@@ -1,3 +1,5 @@
+<?php $__env->startSection('title', '| Perfil'); ?>
+
 <?php $__env->startSection('content'); ?>
 <div class="container">
     <div class="row">
@@ -5,7 +7,7 @@
             <img src="/uploads/avatars/<?php echo e($user->avatar); ?>" style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;">
             <h2><?php echo e($user->name); ?>'s Profile</h2>
             <form enctype="multipart/form-data" action="/profile" method="POST">
-                <label>Cargar Imagen de Perfil</label>
+                <label>Cargar Foto de Perfil</label>
                 <input type="file" name="avatar">
                 <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
                 <input type="submit" class="pull-right btn btn-sm btn-primary">

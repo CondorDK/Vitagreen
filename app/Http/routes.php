@@ -12,11 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.welcome');
 });
+
+Route::get('materiales', 'PagesController@getIndex');	
+Route::resource('tengo', 'TengoController');
+
+
+/*
+|--------------------------------------------------------------------------
+| Rutas login
+|--------------------------------------------------------------------------
+|
+*/
+
+Route::auth();
 Route::get('/profile', 'UserController@profile');
 Route::post('/profile', 'UserController@update_avatar');
 
-Route::auth();
-
-Route::get('/home', 'HomeController@index');
