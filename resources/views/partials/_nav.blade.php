@@ -1,6 +1,6 @@
 
 <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header">
 
             <!-- Collapsed Hamburger -->
@@ -12,7 +12,7 @@
             </button>
 
             <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}"><img style="max-width:100px; margin-top: -7px;" class="img-responsive2" src="../images/Vita.png">
+            <a class="navbar-left" href="{{ url('/') }}"><img class="img-responsive2" src="../images/Vita.png">
             </a>
         </div>
 
