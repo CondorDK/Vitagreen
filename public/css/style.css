@@ -3,6 +3,11 @@
 @import url(http://fonts.googleapis.com/css?family=Antonio:400,300,700,900);
 @import url('http://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700');
 
+.navbar .navbar-header .navbar-left img{
+
+	height: 45px;
+
+}
 
 body {
     width: 100%;
@@ -485,7 +490,7 @@ a.btn:focus{
 
 @media(min-width:767px) {
 
-    .navbar {
+ /*   .navbar {
         padding: 7px 0;
         border-bottom: 0;
         letter-spacing: 1px;
@@ -502,7 +507,7 @@ a.btn:focus{
 
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
-    }
+    }*/
 	
     .intro {
         height: 100%;
@@ -520,7 +525,7 @@ a.btn:focus{
 
 
 }
-@media (max-width:768px) {
+/*@media (max-width:768px) {
 	#navigation {
 		padding: 20px 0;
 	}
@@ -580,7 +585,7 @@ a.btn:focus{
 	.navbar.navbar-custom.navbar-fixed-top {
 		margin-bottom: 30px;
 	}
-}
+}*/
 
 
 /*--Materiales Logueado--*/

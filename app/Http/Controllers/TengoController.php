@@ -19,7 +19,7 @@ class TengoController extends Controller
     public function index()
     {
       
-        $tengo = Tengo::all();
+        $tengo = Tengo::paginate(1);
         return view('tengo.index')->withTengo($tengo);
     }
 
