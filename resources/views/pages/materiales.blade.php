@@ -30,7 +30,7 @@
                         <a><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular"></a>
                         <ul class="submenu">
                           <li><a href="tengo">Tengo</a></li>
-                          <li><a href="">Necesito</a></li>
+                          <li><a href="necesito">Necesito</a></li>
                           <li><a href="">Como?</a></li>
                         </ul>           
                       </li>
@@ -47,7 +47,7 @@
                         <a><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular"></a>
                         <ul class="submenu">
                           <li><a href="tengo">Tengo</a></li>
-                          <li><a href="">Necesito</a></li>
+                          <li><a href="necesito">Necesito</a></li>
                           <li><a href="">Como?</a></li>
                         </ul>           
                       </li>
@@ -64,7 +64,7 @@
                         <a><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular"></a>
                         <ul class="submenu">
                           <li><a href="tengo">Tengo</a></li>
-                          <li><a href="">Necesito</a></li>
+                          <li><a href="necesito">Necesito</a></li>
                           <li><a href="">Como?</a></li>
                         </ul>           
                       </li>
@@ -80,7 +80,7 @@
                         <a><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular"></a>
                         <ul class="submenu">
                           <li><a href="tengo">Tengo</a></li>
-                          <li><a href="">Necesito</a></li>
+                          <li><a href="necesito">Necesito</a></li>
                           <li><a href="">Como?</a></li>
                         </ul>           
                       </li>
