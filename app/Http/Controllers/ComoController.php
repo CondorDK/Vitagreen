@@ -5,11 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+
 use App\Http\Controllers\Controller;
-use App\Tengo;
+use App\Como;
 use Session;
 
-class TengoController extends Controller
+class ComoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,9 +19,8 @@ class TengoController extends Controller
      */
     public function index()
     {
-      
-        $tengo = Tengo::paginate(50);
-        return view('tengo.index')->withTengo($tengo);
+        $como = Como::all();
+        return view('como.index')->withComo($como);
     }
 
     /**
@@ -30,7 +30,7 @@ class TengoController extends Controller
      */
     public function create()
     {
-        return view ('tengo.create');
+        return view ('como.create');
         //
     }
 
@@ -49,16 +49,16 @@ class TengoController extends Controller
             ));
 
         // store en la base de datos
-        $tengo = new Tengo;
+        $como = new Como;
 
-        $tengo->title = $request->title;
-        $tengo->body = $request->body;
+        $como->title = $request->title;
+        $como->body = $request->body;
 
-        $tengo->save();
+        $como->save();
 
-        Session::flash('succes', 'El mensaje se ha enviado correctamente!');
+        Session::flash('success', 'El mensaje se ha enviado correctamente!');
 
-        return redirect()->route('tengo.show', $tengo->id);
+        return redirect()->route('como.show', $como->id);
     }
 
     /**
@@ -69,8 +69,8 @@ class TengoController extends Controller
      */
     public function show($id)
     {
-        $tengo = Tengo::find($id);
-        return view('tengo.show')->withTengo($tengo);
+        $como = Como::find($id);
+        return view('como.show')->withComo($como);
     }
 
     /**
@@ -81,10 +81,7 @@ class TengoController extends Controller
      */
     public function edit($id)
     {
-        // busca los post en la database y guarda
-        $tengo = Tengo::find($id);
-        // devuelve la vista
-        return view('tengo.edit')->withTengo($tengo);
+        //
     }
 
     /**
@@ -103,20 +100,20 @@ class TengoController extends Controller
             ));
 
         // Guarda la data en database
-        $tengo = Tengo::find($id);
+        $como = Como::find($id);
 
-        $tengo->title = $request->input('title');
-        $tengo->body = $request->input('body');
+        $como->title = $request->input('title');
+        $como->body = $request->input('body');
 
-        $tengo->save();
+        $como->save();
 
         // Mensaje flash
-        Session::flash('succes', 'Se Ha Enviado Correctamente.');
+        Session::flash('success', 'Se Ha Guardo Correctamente.');
 
 
 
-        // redirect with flash data to tengo.show
-        return redirect()->route('tengo.show', $tengo->id);
+        // redirect with flash data to necesito.show
+        return redirect()->route('como.show', $como->id);
     }
 
     /**
@@ -127,11 +124,6 @@ class TengoController extends Controller
      */
     public function destroy($id)
     {
-        $tengo = Tengo::find($id);
-
-        $tengo->delete();
-
-        Session::flash('succes', 'El Post Ha Sido Borrado Correctamente');
-        return redirect()->route('tengo.index');
+        //
     }
 }

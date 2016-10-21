@@ -12,15 +12,15 @@
             </button>
 
             <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}"><img style="max-width:100px; margin-top: -7px;" class="img-responsive2" src="../images/Vita.png">
+            <a class="navbar-left" href="{{ url('/') }}"><img class="img-responsive2" src="../images/Vita.png">
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
-            <ul class="nav navbar-nav">
+            <!-- <ul class="nav navbar-nav">
                 <li><a class="btn btn-default" href="{{ url('/materiales') }}">Materiales</a></li>
-            </ul>
+            </ul> -->
 
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">

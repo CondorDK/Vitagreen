@@ -35,6 +35,9 @@
 
 						{!! Form::close() !!}
 					</div>
+					<div class="col-sm-12">
+						{!! Html::linkRoute('necesito.index', '<< Volver', array($necesito->id), array('class' => 'btn btn-info btn-block')) !!}
+					</div>
 				</div>		
 			</div>
 		</div>

@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::get('materiales', 'PagesController@getIndex');	
 Route::resource('tengo', 'TengoController');
 Route::resource('necesito', 'NecesitoController');
+Route::resource('como', 'ComoController');
 
 
 /*

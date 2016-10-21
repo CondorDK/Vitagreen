@@ -6,18 +6,18 @@
 
     <body id="app-layout">
 
+        <div class="container-fluid">
+           @include('partials._nav')
 
-       @include('partials._nav')
+            @include('partials._messages')
 
-        @include('partials._messages')
+            @yield('content')
 
-        @yield('content')
-
-        @include('partials._footer')
-
+            @include('partials._footer')
             
-        @include('partials._javascript')
+            @include('partials._javascript')
 
+        </div>
         @yield('scripts')
 
     </body>

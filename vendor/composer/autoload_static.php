@@ -290,6 +290,7 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
     );
 
     public static $classMap = array (
+        'Como' => __DIR__ . '/../..' . '/database/migrations/2016_10_21_073329_como.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',

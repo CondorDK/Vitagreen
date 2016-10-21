@@ -1,7 +1,7 @@
 @if (Session::has('success'))
-
+	<center>
 	<div class="alert alert-success" role="alert">
-		<strong>Success:</strong> {{ Session::get('success') }}
+		<strong>{{ Session::get('success') }}</strong>
 	</div>
 
 @endif
@@ -17,6 +17,7 @@
 		</ul>
 
 	</div>
+	</center>
 	
 @endif
 

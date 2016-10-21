@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,300,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
 body {
     background: url("../images/fondos.png") no-repeat center center fixed;
     content: "";
@@ -111,8 +114,8 @@ border-color: rgb(241, 248, 224)!important;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: Arial, Helvetica;
-  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }		
 
 		
@@ -126,15 +129,15 @@ border-color: rgb(241, 248, 224)!important;
 .submenu {
   position: absolute;
   width: 200px;
-  left: 50%; margin-left: -100px;
+  left: 30%; margin-left: -100px;
   transform: skewX(-25deg);
   transform-origin: left top;
 }
 /*Color ventanita*/
 .submenu li {
-  background-color: #34495e;
+  background-color: #5D6630;
   position: relative;
-  overflow: hidden;		
+  overflow: hidden;	
 }						
 
 .submenu > li > a {

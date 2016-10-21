@@ -24,17 +24,17 @@
       <!-- Wrapper for slides -->
 <div class="carousel-inner">
   <div class="item active">
-    <img src="../images/slides1.png" alt="First slide">
+    <img src="../images/slides1.jpg" alt="First slide">
             <!-- Static Header -->
             <div class="header-text hidden-xs">
                 <div class="col-md-12 text-center">
-                <h2><span>Bienvenido a Vitagreen</span></h2>
+                <h2><span>Recicla con Nosotros</span></h2>
                     <br>
-                <h3><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></h3>
-                    <br>
-              <div class="">
-                <a class="btn btn-theme btn-sm btn-min-block" href="#">Hola</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Como</a>
-          </div>
+                <h6><span>Vitagreen es un mundo que te ayuda a reciclar
+                  <br>
+                  transformando materiales en desuso en recursos valiosos
+                  <br>
+                  promoviendo así la concientización y preservación del medio ambiente.</span></h6>
        </div>
    </div><!-- /header-text -->
 </div>
@@ -45,15 +45,14 @@
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                                <span>Awesome </span>
+                                <span>Dona Materiales</span>
                             </h2>
                             <br>
-                            <h3>
-                              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                            </h3>
-                            <br>
-                            <div class="">
-                                 <a class="btn btn-theme btn-sm btn-min-block" href="#about">Estas</a><a class="btn btn-theme btn-sm btn-min-block" href="#works">KAJAJJAJA</a></div>
+                            <h6>
+                              <span>En Vitagreen te contactamos con personas que necesitan ese material que a vos te sobra
+                                <br>
+                                trabajando juntos en el cuidado de nuestro planeta.</span>
+                            </h6>
                         </div>
                     </div><!-- /header-text -->
           </div>
@@ -63,15 +62,12 @@
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                                <span>Use without any charge</span>
+                                <span>Recibir Donación</span>
                             </h2>
                             <br>
                             <h3>
-                              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                              <span> Gracias a Vitagreen ahora conseguir ese material que te falta para reciclar es posible. Sumate y ayudanos a promover el cuidado del medio ambiente a través del Reciclaje.</span>
                             </h3>
-                            <br>
-                            <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">Espero</a><a class="btn btn-theme btn-sm btn-min-block" href="#works">Que</a></div>
                         </div>
                     </div><!-- /header-text -->
           </div>
@@ -81,15 +77,12 @@
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                                <span>Use without any charge</span>
+                                <span>Como reciclar</span>
                             </h2>
                             <br>
                             <h3>
-                              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                              <span>Además podes encontrar tutoriales de como reutillizar materiales y también compartir tus ideas.</span>
                             </h3>
-                            <br>
-                            <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">Bien</a><a class="btn btn-theme btn-sm btn-min-block" href="#works">JAJAJJAJAJJA</a></div>
                         </div>
                     </div><!-- /header-text -->
           </div>
@@ -125,12 +118,12 @@
             <div class="col-md-3 ">
                 <div class="wow fadeInLeft" data-wow-delay="0.2s">
                 <div class="service-box">
-                  <div><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular">
-                      <h5>Mayonesa</h5>
+                  <div><img style="max-width:230px; margin-left:-5px;" src="../images/PAPELSolo.png" class="img-rounded" alt="imagen circular">
+                      <h5>Papel</h5>
                       <p>
-                      Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                       Cada tonelada de papel reciclado equivale a no talar aproximadamente 20 árboles, y a no usar 1500 litros de gasoil, 4000 kilowats de energía y 25000 litros de agua. Esos 20 árboles salvados absorben un total de 110 kilos de dióxido de carbono por año.
                       </p>
-                      <a href="#" class="btn btn-skin">Ver Más</a>
+                      <a href="{{ url('/materiales') }}" class="btn btn-skin">Ver Más</a>
                     </div>
                 </div>
              </div>
@@ -139,12 +132,12 @@
             <div class="col-md-3 ">
                 <div class="wow fadeInLeft" data-wow-delay="0.2s">
                   <div class="service-box">
-                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular">
-                        <h5>Mayonesa</h5>
+                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/PLASTICOSolo.png" class="img-rounded" alt="imagen circular">
+                        <h5>Plastico</h5>
                         <p>
-                        Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                        El plástico desechado que va a ríos, lagunas y océanos, mata alrededor de 1 millón de animales por año. Una botella de plástico puede tardar hasta 1000 años de biodegradarse.
                         </p>
-                        <a href="#" class="btn btn-skin">Ver Más</a>
+                        <a href="{{ url('/materiales') }}" class="btn btn-skin">Ver Más</a>
                    </div>
                 </div>
              </div>
@@ -153,12 +146,12 @@
             <div class="col-md-3 ">
                 <div class="wow fadeInLeft" data-wow-delay="0.2s">
                   <div class="service-box">
-                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular">
-                        <h5>Mayonesa</h5>
+                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/TELGOPORSolo.png" class="img-rounded" alt="imagen circular">
+                        <h5>Telgopor</h5>
                         <p>
-                        Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                        Bandejitas de supermercado, potes térmicos y embalajes de electrodomésticos. Todos estos productos están hechos de poliestireno, conocido comúnmente como Telgopor. Este material puede aprovecharse desde sus múltiples presentaciones para tratarse y darle nueva vida.
                         </p>
-                        <a href="#" class="btn btn-skin">Ver Más</a>
+                        <a href="{{ url('/materiales') }}" class="btn btn-skin">Ver Más</a>
                    </div>
                 </div>
              </div>
@@ -166,12 +159,12 @@
             <div class="col-md-3">
                 <div class="wow fadeInLeft" data-wow-delay="0.2s">
                   <div class="service-box">
-                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/rambo1.jpg" class="img-rounded" alt="imagen circular">
-                        <h5>Mayonesa</h5>
+                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/VIDRIOSolo.png" class="img-rounded" alt="imagen circular">
+                        <h5>Vidrio</h5>
                         <p>
-                        Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                        El vidrio es 100% reciclable y puede ser reciclado ilimitadas veces. Este proceso consume sólo el 25% de la energía necesaria para hacer vidrio nuevo. A su vez, reciclando vidrio en vez de fabricar nuevo, reduce la contaminación del aire en un 20% y la del agua en un 50%.
                         </p>
-                        <a href="#" class="btn btn-skin">Ver Más</a>
+                        <a href="{{ url('/materiales') }}" class="btn btn-skin">Ver Más</a>
                     </div>
                 </div>
              </div>
