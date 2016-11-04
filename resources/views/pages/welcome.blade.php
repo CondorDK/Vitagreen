@@ -65,9 +65,9 @@
                                 <span>Recibir Donación</span>
                             </h2>
                             <br>
-                            <h3>
+                            <h6>
                               <span> Gracias a Vitagreen ahora conseguir ese material que te falta para reciclar es posible. Sumate y ayudanos a promover el cuidado del medio ambiente a través del Reciclaje.</span>
-                            </h3>
+                            </h6>
                         </div>
                     </div><!-- /header-text -->
           </div>
@@ -80,9 +80,9 @@
                                 <span>Como reciclar</span>
                             </h2>
                             <br>
-                            <h3>
+                            <h6>
                               <span>Además podes encontrar tutoriales de como reutillizar materiales y también compartir tus ideas.</span>
-                            </h3>
+                            </h6>
                         </div>
                     </div><!-- /header-text -->
           </div>

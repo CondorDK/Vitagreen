@@ -9,7 +9,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Como;
 use Session;
-
+use Image;
 class ComoController extends Controller
 {
     /**
@@ -53,6 +53,16 @@ class ComoController extends Controller
 
         $como->title = $request->title;
         $como->body = $request->body;
+
+        //guardar imagen
+        if ($request->hasFile('featured_image')){
+            $image = $request->file('featured_image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $location = public_path('images/' . $filename);
+            Image::make($image)->resize(800,400)->save($location);
+
+            $como->image = $filename;
+        }
 
         $como->save();
 

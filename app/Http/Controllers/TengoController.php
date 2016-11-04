@@ -56,7 +56,7 @@ class TengoController extends Controller
 
         $tengo->save();
 
-        Session::flash('succes', 'El mensaje se ha enviado correctamente!');
+        Session::flash('success', 'El mensaje se ha enviado correctamente!');
 
         return redirect()->route('tengo.show', $tengo->id);
     }
@@ -111,7 +111,7 @@ class TengoController extends Controller
         $tengo->save();
 
         // Mensaje flash
-        Session::flash('succes', 'Se Ha Enviado Correctamente.');
+        Session::flash('success', 'Se Ha Editado Correctamente.');
 
 
 
@@ -131,7 +131,7 @@ class TengoController extends Controller
 
         $tengo->delete();
 
-        Session::flash('succes', 'El Post Ha Sido Borrado Correctamente');
+        Session::flash('success', 'El Post Ha Sido Borrado Correctamente');
         return redirect()->route('tengo.index');
     }
 }

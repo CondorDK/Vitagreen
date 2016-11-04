@@ -132,7 +132,7 @@ class NecesitoController extends Controller
 
         $necesito->delete();
 
-        Session::flash('success', 'El post ha sido borrado');
+        Session::flash('success', 'El Post Ha Sido Borrado Correctamente');
         return redirect()->route('necesito.index');
     }
 }

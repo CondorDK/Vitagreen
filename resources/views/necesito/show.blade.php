@@ -9,7 +9,7 @@
 		<div class="col-md-8">
 			<h1>{{ $necesito->title }}</h1>
 			
-			<p class="lead">{{ $necesito->body }}</p>
+			<p class="lead">{!! $necesito->body !!}</p>
 		</div>
 
 		<div class="col-md-4">

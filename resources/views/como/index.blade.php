@@ -38,7 +38,7 @@
 						<tr>
 							<th>{{ $com->id }}</th>
 							<td>{{ $com->title }}</td>
-							<td>{{ substr($com->body, 0, 50) }}{{ strlen($com->body) > 50 ? "..." : "" }}</td>
+							<td>{{ substr(strip_tags($com->body), 0, 50) }}{{ strlen(strip_tags($com->body)) > 50 ? "..." : "" }}</td>
 							<td>{{ date('M j, Y', strtotime($com->created_at)) }}</td>
 							<td><a href="{{ route('como.show', $com->id) }}"  class="btn btn-default btn-sm">Ver</a>
 								<a href="{{ route('como.edit', $com->id) }}" class="btn btn-default btn-sm">Editar</a></td>			

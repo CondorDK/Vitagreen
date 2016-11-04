@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddImageColToComo' => $baseDir . '/database/migrations/2016_11_04_125151_add_image_col_to_como.php',
     'Como' => $baseDir . '/database/migrations/2016_10_21_073329_como.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
