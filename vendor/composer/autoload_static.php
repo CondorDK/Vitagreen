@@ -290,8 +290,7 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
     );
 
     public static $classMap = array (
-        'AddImageColToComo' => __DIR__ . '/../..' . '/database/migrations/2016_11_04_125151_add_image_col_to_como.php',
-        'Como' => __DIR__ . '/../..' . '/database/migrations/2016_10_21_073329_como.php',
+        'AddImageColToComo' => __DIR__ . '/../..' . '/database/migrations/2016_11_16_043934_add_image_col_to_como.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
@@ -367,7 +366,6 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
         'IlluminateQueueClosure' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
-        'Necesito' => __DIR__ . '/../..' . '/database/migrations/2016_10_18_020017_necesito.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',
@@ -799,7 +797,7 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'SebastianBergmann\\RecursionContext\\Exception' => __DIR__ . '/..' . '/sebastian/recursion-context/src/Exception.php',
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
-        'Tengo' => __DIR__ . '/../..' . '/database/migrations/2016_10_16_083538_tengo.php',
+        'TengoNecesitoComoTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_16_041815_TengoNecesitoComoTable.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
     );

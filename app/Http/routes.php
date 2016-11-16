@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.welcome');
-});
-
-Route::get('materiales', 'PagesController@getIndex');	
+Route::get('/', 'PagesController@getIndex');
+Route::get('materiales', 'PagesController@getMaterial');
+Route::get('acercade', 'PagesController@getAcercaDe');
+Route::get('servicios', 'PagesController@getServicios');
+Route::get('contacto', 'PagesController@getContacto');
 Route::resource('tengo', 'TengoController');
 Route::resource('necesito', 'NecesitoController');
 Route::resource('como', 'ComoController');

@@ -21,12 +21,11 @@
 @endsection
 
 @section('content')
-
+<div class="container">
       <div class='row'>
       	 <div class='col-md-8 col-md-offset-2'>
       	 	 <center><h1>Crear Nueva Entrada</h1></center>
       	 	 <hr>
-
 
 
       	 	 {!! Form::open(array('route' => 'como.store', 'data-parsley-validate' => '')) !!}
@@ -44,6 +43,7 @@
 
       	 </div>
       </div>
+</div>
 
 @endsection
 

@@ -5,7 +5,8 @@
 
 
 @section('content')
-
+	
+	<div class="container">
 	<div class="row">
 		<div class="col-md-10">
 			<h1>Todos Los Posts</h1>
@@ -47,6 +48,7 @@
 			</table>
 		</div>
 	</div>
+</div>
 
 @stop
 

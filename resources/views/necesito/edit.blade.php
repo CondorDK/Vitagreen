@@ -19,7 +19,7 @@
 
 
 @section('content')
-	
+	<div class="container">
 	<div class="row">
 		{!! Form::model($necesito, ['route' => ['necesito.update', $necesito->id], 'method' => 'PUT']) !!}
 		<div class="col-md-8">
@@ -54,7 +54,7 @@
 		</div>
 		{!! Form::close() !!}
 	</div> <!-- fin del .row (form)-->
-
+</div>
 <br>
 <br>
 <br>

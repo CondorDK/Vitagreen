@@ -2,11 +2,31 @@
 
 @section('title', '| Como Reciclar Posts')
 
+@section('stylesheets')
+
+	{!! Html::style('css/parsley.css') !!}
+
+
+	  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+
+      <script>
+            tinymce.init({
+                  selector: 'textarea',
+                  plugins: 'link',
+                  menubar: false
+
+            });
+      </script>
+
+@endsection
+
 @section('content')
 
+<div class="container">
 
 	<div class="row">
 		<div class="col-md-8">
+		<img src="{{ asset('images/' . $como->image) }}" height="400" width="800"/>
 			<h1>{{ $como->title }}</h1>
 			
 			<p class="lead">{!! $como->body !!}</p>
@@ -42,7 +62,13 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 
 @endsection
 
+@section('scripts')
+
+
+      {!! Html::script('js/parsley.min.js') !!}
+
+@endsection

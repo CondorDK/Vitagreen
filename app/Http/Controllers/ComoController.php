@@ -59,7 +59,7 @@ class ComoController extends Controller
             $image = $request->file('featured_image');
             $filename = time() . '.' . $image->getClientOriginalExtension();
             $location = public_path('images/' . $filename);
-            Image::make($image)->resize(800,400)->save($location);
+            Image::make($image)->resize(800, 400)->save($location);
 
             $como->image = $filename;
         }
@@ -91,8 +91,12 @@ class ComoController extends Controller
      */
     public function edit($id)
     {
-        //
-    }
+        // busca los post en la database y guarda
+        $como = Como::find($id);
+        // devuelve la vista
+        return view('como.edit')->withComo($como);
+
+        }
 
     /**
      * Update the specified resource in storage.
@@ -134,6 +138,11 @@ class ComoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $como = Como::find($id);
+
+        $como->delete();
+
+        Session::flash('success', 'El Post Ha Sido Borrado Correctamente');
+        return redirect()->route('como.index');
     }
 }
