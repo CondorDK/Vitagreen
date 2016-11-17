@@ -42,4 +42,5 @@ return array(
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
     'App\\' => array($baseDir . '/app'),
+    'Abhitheawesomecoder\\Laraveleditprofile\\' => array($vendorDir . '/abhitheawesomecoder/laravel-edit-profile/src'),
 );

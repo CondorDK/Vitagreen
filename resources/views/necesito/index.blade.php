@@ -5,8 +5,7 @@
 
 
 @section('content')
-	
-	<div class="container">
+
 	<div class="row">
 		<div class="col-md-10">
 			<h1>Todos Los Posts</h1>
@@ -38,7 +37,7 @@
 						<tr>
 							<th>{{ $necesito->id }}</th>
 							<td>{{ $necesito->title }}</td>
-							<td>{{ substr(strip_tags($necesito->body), 0, 50) }}{{ strlen(strip_tags($necesito->body)) > 50 ? "..." : "" }}</td>
+							<td>{{ substr($necesito->body, 0, 50) }}{{ strlen($necesito->body) > 50 ? "..." : "" }}</td>
 							<td>{{ date('M j, Y', strtotime($necesito->created_at)) }}</td>
 							<td><a href="{{ route('necesito.show', $necesito->id) }}"  class="btn btn-default btn-sm">Ver</a><a href="{{ route('necesito.edit', $necesito->id) }}" class="btn btn-default btn-sm">Editar</a></td>					
 						</tr>
@@ -48,7 +47,6 @@
 			</table>
 		</div>
 	</div>
-</div>
 
 @stop
 

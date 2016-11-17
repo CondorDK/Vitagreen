@@ -5,7 +5,7 @@
 
 
 @section('content')
-	<div class="container">
+
 	<div class="row">
 	<br>
 		<div class="col-md-10">
@@ -38,7 +38,7 @@
 						<tr>
 							<th>{{ $teng->id }}</th>
 							<td>{{ $teng->title }}</td>
-							<td>{{ substr(strip_tags($teng->body), 0, 50) }}{{ strlen(strip_tags($teng->body)) > 50 ? "..." : "" }}</td>
+							<td>{{ substr($teng->body, 0, 50) }}{{ strlen($teng->body) > 50 ? "..." : "" }}</td>
 							<td>{{ date('M j, Y', strtotime($teng->created_at)) }}</td>
 							<td><a href="{{ route('tengo.show', $teng->id) }}"  class="btn btn-default btn-sm">Ver</a>
 								<a href="{{ route('tengo.edit', $teng->id) }}" class="btn btn-default btn-sm">Editar</a></td>			
@@ -53,7 +53,6 @@
 			</div>
 		</div>
 	</div>
-</div>
 
 @stop
 

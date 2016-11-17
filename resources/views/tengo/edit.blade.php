@@ -2,25 +2,8 @@
 
 @section('title', '| Editar Post')
 
-@section('stylesheets')
-
-	  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-
-      <script>
-            tinymce.init({
-                  selector: 'textarea',
-                  plugins: 'link',
-                  menubar: false
-
-            });
-      </script>
-
 @section('content')
-
-
-
-@section('content')
-	<div class="container">
+	
 	<div class="row">
 		{!! Form::model($tengo, ['route' => ['tengo.update', $tengo->id], 'method' => 'PUT']) !!}
 		<div class="col-md-8">
@@ -55,7 +38,6 @@
 		</div>
 		{!! Form::close() !!}
 	</div> <!-- fin del .row (form)-->
-</div>
 
 <br>
 <br>

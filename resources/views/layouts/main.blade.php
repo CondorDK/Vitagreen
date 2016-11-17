@@ -4,9 +4,9 @@
         @include('partials._head')
     </head>
 
-    <body>
+    <body id="app-layout">
 
-        <div>
+        <div class="container-fluid">
            @include('partials._nav')
 
             @include('partials._messages')
@@ -14,11 +14,11 @@
             @yield('content')
 
             @include('partials._footer')
-
+            
             @include('partials._javascript')
 
-        @yield('scripts')
         </div>
+        @yield('scripts')
 
     </body>
 </html>

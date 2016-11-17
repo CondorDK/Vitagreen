@@ -2,362 +2,128 @@
 
 @section('title', '| Home')
 
-@section('content')
+@section('stylesheets')
 
-
-
-<!-- ============================  Slider Start ============================ -->
-
-
-<section class="flexslider-container container">
-    <div class="row">
-      <div class="span12">
-        <div class="flexslider" id="flex1">
-          <div class="flex-viewport" style="overflow: hidden; position: relative; height: 0px;"><ul class="slides" style="width: 1000%; transition-duration: 1s; transform: translate3d(-2276px, 0px, 0px);">
-            <li class="clone" style="width: 1138px; float: left; display: block;">
-              <img src="images/slides1.jpg" alt="img">
-                <div class="captions">
-                  <p class="description">Biscuit gummies pudding cookie wypas macaroon.</p>
-                    </div> <!-- end captions -->
-                    </li>
-                    <li class="clone" style="width: 1138px; float: left; display: block;">
-                      <img src="images/slides2.png" alt="img">
-                      <div class="captions">
-                          <p class="description">Biscuit gummies pudding cookie wypas macaroon.</p>
-                      </div> <!-- end captions -->
-                    </li>
-                    <li style="width: 1138px; float: left; display: block;" class="flex-active-slide">
-                      <img src="images/slides3.png" alt="img">
-                      <div class="captions">
-                          <p class="description">Biscuit gummies pudding cookie wypas macaroon.</p>
-                      </div> <!-- end captions -->
-                    </li>
-                    <li style="width: 1138px; float: left; display: block;" class="">
-                      <img src="images/slides4.png" alt="img">
-                      <div class="captions">
-                          <p class="description">Biscuit gummies pudding cookie wypas macaroon.</p>
-                      </div> <!-- end captions -->
-                    </li>
-                  </ul>
-                </div>
-            </div>
-         </div> <!-- end span12 -->
-      </div> <!-- end row -->
-    </section> <!-- end flexslider-container container -->
-                              
-
-
-
-    <!-- ============================  Main Tagline Start ============================ -->
-    <section class="main-tagline">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <h1 class="title center">HELLO! WELCOME TO HOME</h1>
-            <h6 class="subtitle center">Pastry gummi bears gummies marzipan danish jelly beans chupa chups marshmallow</h6>
-          </div> <!-- end span12 -->
-        </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section> <!-- end main-tagline -->
-    <!-- ============================  Main Tagline Ends ============================ -->
-
-    <!-- ============================  Title Separator Starts ============================ -->
-
-    <section class="title-separator">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <h5 class="title center"><span>AMAZING FEATURES</span></h5>
-          </div> <!-- end span12 -->
-        </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section> <!-- end title-separator -->
-
-    <!-- ============================  Title Separator Ends ============================ -->
-
-
-    <!-- ============================  Features Start ============================ -->
-
-    <section class="features-container">
-      <div class="container">
-        <div class="row">
-          <ul class="unstyled feature-list">
-            <li class="feature-items">
-              <div class="feature center rocket">
-                <img src="images/rocket.png" alt="rocket">
-
-                <div class="feature-content">
-                  <h5 class="title"><span>Cupcake ipsum dolor</span></h5>
-                  <p class="content">Applicake pudding faworki halvaroon icing sugar plum cake powderi  jujubes pastry </p>
-                </div> <!-- end feature-content -->
-              </div> <!-- end feature -->
-            </li>
-            <li class="feature-items v2">
-              <img src="images/line-separator.png" alt="img">
-            </li>
-            <li class="feature-items">
-              <div class="feature center camera">
-                <img src="images/camera.png" alt="rocket">
-
-                <div class="feature-content">
-                  <h5 class="title"><span>Cupcake ipsum dolor</span></h5>
-                  <p class="content">Applicake pudding faworki halvaroon icing sugar plum cake powderi  jujubes pastry </p>
-                </div> <!-- end feature-content -->
-              </div> <!-- end feature -->
-            </li>
-            <li class="feature-items v2">
-              <img src="images/line-separator.png" alt="img">
-            </li>
-            <li class="feature-items">
-              <div class="feature center graduate">
-                <img src="images/graduate.png" alt="rocket">
-
-                <div class="feature-content">
-                  <h5 class="title"><span>Cupcake ipsum dolor</span></h5>
-                  <p class="content">Applicake pudding faworki halvaroon icing sugar plum cake powderi  jujubes pastry </p>
-                </div> <!-- end feature-content -->
-              </div> <!-- end feature -->
-            </li>
-            <li class="feature-items v2">
-              <img src="images/line-separator.png" alt="img">
-            </li>
-            <li class="feature-items">
-              <div class="feature center settings">
-                <img src="images/settings.png" alt="rocket">
-
-                <div class="feature-content">
-                  <h5 class="title"><span>Cupcake ipsum dolor</span></h5>
-                  <p class="content">Applicake pudding faworki halvaroon icing sugar plum cake powderi  jujubes pastry </p>
-                </div> <!-- end feature-content -->
-              </div> <!-- end feature -->
-            </li>
-          </ul>
-        </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section> <!-- end features-container -->
-
-    <!-- ============================  Features Ends ============================ -->
-
-
-     <!-- ============================  Title Separator Starts ============================ -->
-
-    <section class="title-separator">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <h5 class="title center"><span>From the Blog</span></h5>
-          </div> <!-- end span12 -->
-        </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section> <!-- end title-separator -->
-
-    <!-- ============================  Title Separator Ends ============================ -->
-
-
-    <!-- ============================  Recent Posts Start ============================ -->
-
-    <section class="recent-posts">
-      <div class="container">
-    @foreach ($como as $com)
-        <div class="row">
-          <div class="span4">
-            <div class="recent-post">
-              <figure class="recent-post-img">
-                <img src="#" alt="img">{!! $com->image !!}
-              </figure> <!-- end recent-post-img -->
-
-
-              <div class="post-content">
-                  <h5 class="title"><a href="#"><span>{!! $com->title !!}</span></a></h5>
-                  <p class="content">{!! substr($com->body, 0, 300  ) !!}{{ strlen($com->body) > 300 ? "..." : ""}} 
-                    <a href="{{ url('/como') }}" class="read-more" title="Read More ..."><img src="images/read-more.png" alt="img"></a>
-                  </p>
-
-                  <ul class="unstyled inline post-meta">
-                    <li><a href="#"><i class="icon-calendar"></i>  <span>{!! $com->created_at !!}</span></a></li>
-                    <li><a href="#"><i class="icon-comments"></i> <span>75 Comments</span></a></li>
-                  </ul> <!-- end post-meta -->
-
-
-                </div> <!-- end post-content -->
-
-            </div> <!-- end recent-post -->
-          </div> <!-- end span4 -->
-          @endforeach
-        </section>
-
-
-    <!-- ============================  Recent Posts Ends ============================ -->
-
-    <!-- ============================  Title Separator Starts ============================ -->
-
-    <section class="title-separator">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <h5 class="title center"><span>Our Clients</span></h5>
-          </div> <!-- end span12 -->
-        </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section> <!-- end title-separator -->
-
-    <!-- ============================  Title Separator Ends ============================ -->
-
-
-    <!-- ============================  Recent Clients Start ============================ -->
-
-    <section class="recent-clients">
-      <div class="container">
-        <div class="row">
-          <ul class="unstyled recent-clients-list">
-            <li><a href="#"><img src="images/client1.png" alt="img"></a></li>
-            <li><a href="#"><img src="images/client2.png" alt="img"></a></li>
-            <li><a href="#"><img src="images/client3.png" alt="img"></a></li>
-            <li><a href="#"><img src="images/client4.png" alt="img"></a></li>
-            <li><a href="#"><img src="images/client5.png" alt="img"></a></li>
-          </ul> <!-- end recent-clients-list -->
-        </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section> <!-- end recent-clients -->
-
-    <!-- ============================  Recent Clients Ends ============================ -->
-
-
-    <!-- ============================  Services and Works Starts ============================ -->
-
-    <section class="services-works">
-      <div class="container">
-        <div class="row">
-          <div class="span6">
-            <div class="services-container">
-              <h4 class="title"><span>Our Services</span></h4>
-              <p class="content">Applicake pudding faworki halvaroon icing suplum cake powderi  jujubpastry. Pudding marzicandy canes lollipop danish Applicake pie ice cream jujubes oat cake pudding tiramisu cupcake gummi bears. lemon drops.</p>
-
-              <div class="row">
-                <div class="span3">
-                  <ul class="unstyled services-description">
-                    <li><i class="icon-bar-chart icon-2x"></i> <span>Search Engine Optimization </span></li>
-                    <li><i class="icon-list-alt icon-2x"></i> <span>Risk Managment </span></li>
-                    <li><i class="icon-shopping-cart icon-2x"></i> <span>E-Commerce </span></li>
-                    <li><i class="icon-suitcase icon-2x"></i> <span>Icon Designing</span></li>
-                  </ul>
-                </div> <!-- end span3 -->
-                <div class="span3">
-                  <ul class="unstyled services-description">
-                    <li><i class="icon-tablet icon-2x"></i> <span>Apps Development</span></li>
-                    <li><i class="icon-globe icon-2x"></i> <span>Web Designing </span></li>
-                    <li><i class="icon-camera icon-2x"></i> <span>Photography </span></li>
-                    <li><i class="icon-beaker icon-2x"></i> <span>Game Development</span></li>
-                  </ul>
-                </div> <!-- end span3 -->
-              </div> <!-- end row -->
-            </div> <!-- end services-container -->
-          </div> <!-- end span6 -->
-
-          <div class="span6">
-            <div class="works-container">
-              <h4 class="title"><span>Recent Works</span></h4>
-
-              <div class="work-img-container">
-                <div class="row">
-                  <div class="span3">
-                    <div class="img-container">
-                      <figure class="recent-work-img">
-                        <img src="images/4.png" alt="img">
-
-                        <figcaption class="rollover">
-                          <ul class="unstyle inline gallery clearfix">
-                            <li class="enlarge"><a href="images/4.png" rel="prettyPhoto" title="Photo 1"><i class="icon-search icon-large"></i></a></li>
-                            <li class="link"><a href="#"><i class="icon-link icon-large"></i></a></li>
-                          </ul>
-                        </figcaption> <!-- end rollover -->
-                      </figure>  <!-- end recent-work-img -->
-                    </div> <!-- end img-container -->
-                  </div> <!-- end span3 -->
-                  <div class="span3">
-                    <div class="img-container">
-                      <figure class="recent-work-img">
-                        <img src="images/4-b.png" alt="img">
-
-                        <figcaption class="rollover">
-                          <ul class="unstyle inline gallery clearfix">
-                            <li class="enlarge"><a href="images/4-b.png" rel="prettyPhoto" title="Photo 1"><i class="icon-search icon-large"></i></a></li>
-                            <li class="link"><a href="#"><i class="icon-link icon-large"></i></a></li>
-                          </ul>
-                        </figcaption> <!-- end rollover -->
-                      </figure>  <!-- end recent-work-img -->
-                    </div> <!-- end img-container -->
-                  </div>
-                </div> <!-- end row -->
-
-                <div class="row">
-                  <div class="span3">
-                    <div class="img-container">
-                      <figure class="recent-work-img">
-                        <img src="images/4-c.png" alt="img">
-
-                        <figcaption class="rollover">
-                          <ul class="unstyle inline gallery clearfix">
-                            <li class="enlarge"><a href="images/4-c.png" rel="prettyPhoto" title="Photo 1"><i class="icon-search icon-large"></i></a></li>
-                            <li class="link"><a href="#"><i class="icon-link icon-large"></i></a></li>
-                          </ul>
-                        </figcaption> <!-- end rollover -->
-                      </figure>  <!-- end recent-work-img -->
-                    </div> <!-- end img-container -->
-                  </div> <!-- end span3 -->
-                  <div class="span3">
-                    <div class="img-container">
-                      <figure class="recent-work-img">
-                        <img src="images/4-d.png" alt="img">
-
-                        <figcaption class="rollover">
-                          <ul class="unstyle inline gallery clearfix">
-                            <li class="enlarge"><a href="images/4-d.png" rel="prettyPhoto" title="Photo 1"><i class="icon-search icon-large"></i></a></li>
-                            <li class="link"><a href="#"><i class="icon-link icon-large"></i></a></li>
-                          </ul>
-                        </figcaption> <!-- end rollover -->
-                      </figure>  <!-- end recent-work-img -->
-                    </div> <!-- end img-container -->
-                  </div>
-                </div> <!-- end row -->
-              </div> <!-- end work-img-continainer -->
-            </div> <!-- end works-container -->
-          </div> <!-- end span6 -->
-        </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section> <!-- end services-works -->
-
-    <!-- ============================  Services and Works Ends ============================ -->
-
-    <!-- ============================  Get in Touch Start ============================ -->
-
-    <section class="get-in-touch">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <div class="get-in-container">
-              <div class="row-fluid">
-                <div class="span10">
-                  <p class="content">Marzipan candy canes powder powder sesame snaps cupcake toffee biscuit bonbon. Sesame snaps oat cake cagummior bears chocolate gummi bears jujubes. Pudding marzicandy canes lollipop danish.</p>
-                </div> <!-- end span9 -->
-                <div class="span2">
-                  <div class="call-to-action">
-                    <a href="#" class="btn btn-primary btn-large">Get in Touch</a>
-                  </div> <!-- end call-to-action -->
-                </div> <!-- end span3 -->
-              </div> <!-- end row-fluid -->
-            </div> <!-- end get-in-container -->
-          </div> <!-- end span12 -->
-        </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section> <!-- end get-in-touch -->
-
-
-    <!-- ============================  Get in Touch Ends ============================ -->
-
+      {!! Html::style('css/style.css') !!}
 
 
 @endsection
 
+@section('content')
 
-  <!-- Archivos Core JavaScript -->
+
+    <!-- Carousel -->
+<div class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+
+      <!-- Wrapper for slides -->
+<div class="carousel-inner">
+  <div class="item active">
+    <img src="../images/slide3.jpg" alt="First slide">
+</div>
+
+          <div class="item">
+            <img src="../images/slide2.png" alt="Second slide">
+          </div>
+          <div class="item">
+            <img src="../images/slide3.png" alt="Third slide">
+          </div>
+          <div class="item">
+            <img src="../images/slide2.png" alt="Fourt slide">
+          </div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div><!-- /carousel -->
+
+  <!-- Section: Materiales De Nuestra Pagina -->
+<section id="service" class="home-section color-dark bg-gray">
+    <div class="container marginbot-50">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+            <div class="section-heading text-center">
+            <h2 class="h-bold">Materiales</h2>
+            <div class="divider-header"></div>
+            <p>Lorem ipsum dolor sit amet, agam perfecto sensibus usu at duo ut iriure.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+</div>
+
+<div class="text-center">
+    <div class="container">
+      <div class="row">
+            <div class="col-md-3 ">
+                <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="service-box">
+                  <div><img style="max-width:230px; margin-left:-5px;" src="../images/PAPELSolo.png" class="img-rounded" alt="imagen circular">
+                      <h5>Papel</h5>
+                      <p>
+                       Cada tonelada de papel reciclado equivale a no talar aproximadamente 20 árboles, y a no usar 1500 litros de gasoil, 4000 kilowats de energía y 25000 litros de agua. Esos 20 árboles salvados absorben un total de 110 kilos de dióxido de carbono por año.
+                      </p>
+                      <a href="{{ url('/materiales') }}" class="btn btn-skin">Ver Más</a>
+                    </div>
+                </div>
+             </div>
+          </div>
+
+            <div class="col-md-3 ">
+                <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="service-box">
+                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/PLASTICOSolo.png" class="img-rounded" alt="imagen circular">
+                        <h5>Plastico</h5>
+                        <p>
+                        El plástico desechado que va a ríos, lagunas y océanos, mata alrededor de 1 millón de animales por año. Una botella de plástico puede tardar hasta 1000 años de biodegradarse.
+                        </p>
+                        <a href="{{ url('/materiales') }}" class="btn btn-skin">Ver Más</a>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+            <div class="col-md-3 ">
+                <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="service-box">
+                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/TELGOPORSolo.png" class="img-rounded" alt="imagen circular">
+                        <h5>Telgopor</h5>
+                        <p>
+                        Bandejitas de supermercado, potes térmicos y embalajes de electrodomésticos. Todos estos productos están hechos de poliestireno, conocido comúnmente como Telgopor. Este material puede aprovecharse desde sus múltiples presentaciones para tratarse y darle nueva vida.
+                        </p>
+                        <a href="{{ url('/materiales') }}" class="btn btn-skin">Ver Más</a>
+                   </div>
+                </div>
+             </div>
+          </div>
+            <div class="col-md-3">
+                <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="service-box">
+                    <div><img style="max-width:230px; margin-left:-5px;" src="../images/VIDRIOSolo.png" class="img-rounded" alt="imagen circular">
+                        <h5>Vidrio</h5>
+                        <p>
+                        El vidrio es 100% reciclable y puede ser reciclado ilimitadas veces. Este proceso consume sólo el 25% de la energía necesaria para hacer vidrio nuevo. A su vez, reciclando vidrio en vez de fabricar nuevo, reduce la contaminación del aire en un 20% y la del agua en un 50%.
+                        </p>
+                        <a href="{{ url('/materiales') }}" class="btn btn-skin">Ver Más</a>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>    
+    </div>
+</div>
+
+</section>
+  <!-- /Section: services -->
+  
+
+
+@endsection
+
+  <!-- Archivos Core JavaScript -->  
+

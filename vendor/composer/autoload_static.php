@@ -95,6 +95,7 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'A' => 
         array (
             'App\\' => 4,
+            'Abhitheawesomecoder\\Laraveleditprofile\\' => 39,
         ),
     );
 
@@ -245,6 +246,10 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
+        'Abhitheawesomecoder\\Laraveleditprofile\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/abhitheawesomecoder/laravel-edit-profile/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -290,7 +295,8 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
     );
 
     public static $classMap = array (
-        'AddImageColToComo' => __DIR__ . '/../..' . '/database/migrations/2016_11_16_043934_add_image_col_to_como.php',
+        'Abhitheawesomecoder\\Laraveleditprofile\\EditprofileController' => __DIR__ . '/..' . '/abhitheawesomecoder/laravel-edit-profile/src/EditprofileController.php',
+        'Abhitheawesomecoder\\Laraveleditprofile\\EditprofileServiceProvider' => __DIR__ . '/..' . '/abhitheawesomecoder/laravel-edit-profile/src/EditprofileServiceProvider.php',
         'App\\Como' => __DIR__ . '/../..' . '/app/Como.php',
         'App\\Console\\Commands\\Inspire' => __DIR__ . '/../..' . '/app/Console/Commands/Inspire.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
@@ -3088,7 +3094,7 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'Symfony\\Polyfill\\Util\\BinaryNoFuncOverload' => __DIR__ . '/..' . '/symfony/polyfill-util/BinaryNoFuncOverload.php',
         'Symfony\\Polyfill\\Util\\BinaryOnFuncOverload' => __DIR__ . '/..' . '/symfony/polyfill-util/BinaryOnFuncOverload.php',
         'Symfony\\Polyfill\\Util\\TestListener' => __DIR__ . '/..' . '/symfony/polyfill-util/TestListener.php',
-        'TengoNecesitoComoTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_16_041815_TengoNecesitoComoTable.php',
+        'TengoNecesitoComoTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_17_123211_TengoNecesitoComoTable.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',

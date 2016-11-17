@@ -9,7 +9,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Como;
 use Session;
-use Image;
+
 class ComoController extends Controller
 {
     /**
@@ -54,16 +54,6 @@ class ComoController extends Controller
         $como->title = $request->title;
         $como->body = $request->body;
 
-        //guardar imagen
-        if ($request->hasFile('featured_image')){
-            $image = $request->file('featured_image');
-            $filename = time() . '.' . $image->getClientOriginalExtension();
-            $location = public_path('images/' . $filename);
-            Image::make($image)->resize(800, 400)->save($location);
-
-            $como->image = $filename;
-        }
-
         $como->save();
 
         Session::flash('success', 'El mensaje se ha enviado correctamente!');
@@ -91,12 +81,8 @@ class ComoController extends Controller
      */
     public function edit($id)
     {
-        // busca los post en la database y guarda
-        $como = Como::find($id);
-        // devuelve la vista
-        return view('como.edit')->withComo($como);
-
-        }
+        //
+    }
 
     /**
      * Update the specified resource in storage.
@@ -138,11 +124,6 @@ class ComoController extends Controller
      */
     public function destroy($id)
     {
-        $como = Como::find($id);
-
-        $como->delete();
-
-        Session::flash('success', 'El Post Ha Sido Borrado Correctamente');
-        return redirect()->route('como.index');
+        //
     }
 }
