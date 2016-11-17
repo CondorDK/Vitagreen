@@ -34,7 +34,7 @@
             </a>
 
             <!-- Be sure to leave the brand out there if you want it shown -->
-            <a class="brand" href="{{ url('/') }}"><img src="images/logo.png" alt="logo"></a>
+            <a class="brand" href="{{ url('/') }}"><img src="images/vita.png" alt="logo" width="100" height="100"></a>
 
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
