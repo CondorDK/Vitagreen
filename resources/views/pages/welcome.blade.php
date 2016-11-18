@@ -44,7 +44,7 @@
          </div> <!-- end span12 -->
       </div> <!-- end row -->
     </section> <!-- end flexslider-container container -->
-                              
+
 
 
 
@@ -169,7 +169,7 @@
 
               <div class="post-content">
                   <h5 class="title"><a href="#"><span>{!! $com->title !!}</span></a></h5>
-                  <p class="content">{!! substr($com->body, 0, 300  ) !!}{{ strlen($com->body) > 300 ? "..." : ""}} 
+                  <p class="content">{!! substr($com->body, 0, 300  ) !!}{{ strlen($com->body) > 300 ? "..." : ""}}
                     <a href="{{ url('/como') }}" class="read-more" title="Read More ..."><img src="images/read-more.png" alt="img"></a>
                   </p>
 
