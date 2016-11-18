@@ -2,7 +2,7 @@
 
     <!-- ============================  Dropdown Info Start ============================ -->
 
-    <section class="dropdown-info">
+  <!--  <section class="dropdown-info">
       <div class="container">
         <div class="row">
           <div class="span12">
@@ -12,11 +12,10 @@
                 <li><i class="icon-phone icon-large"></i> <span class="info">+54- 3624-123456</span></li>
                 <li><i class="icon-envelope-alt icon-large"></i> <span class="info">mipi@tuminex.com</span></li>
               </ul>
-            </div> <!-- end contact-info-widget -->
-          </div> <!-- end span12 -->
-        </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section> <!-- end dropdown-info -->
+            </div> <>
+        </div>
+      </div>  r
+    </section> -->
 
     <!-- ============================  Dropdown Info End ============================ -->
 

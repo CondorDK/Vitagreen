@@ -190,18 +190,18 @@ figure {
 
 .main-nav .navbar .nav > li > a:hover,
 .main-nav .navbar .nav > li > a:focus {
-  color: #3c86c3;
+  color: #51862F;
   background-color: #f9f9f9;
-  border-top: 2px solid #3c86c3;
+  border-top: 2px solid #51862F;
   box-shadow: none;
 }
 
 .main-nav .navbar .nav > .active > a,
 .main-nav .navbar .nav > .active > a:hover,
 .main-nav .navbar .nav > .active > a:focus {
-  color: #3c86c3;
+  color: #51862F;
   background-color: #f9f9f9;
-  border-top: 2px solid #3c86c3;
+  border-top: 2px solid #51862F;
   box-shadow: none;
 }
 
@@ -246,7 +246,7 @@ figure {
 }
 
 .main-nav .navbar .nav .dropdown-menu > li > a:hover {
-  color: #3c86c3;
+  color: #51862F;
   text-decoration: none;
   background-color: #f9f9f9;
 }
@@ -257,15 +257,15 @@ figure {
 
 .main-nav .navbar .nav .dropdown-menu > li:hover .list-circle {
   background-color: #fff;
-  border-color: #3c86c3;
+  border-color: #51862F;
 }
 
 .main-nav .navbar .nav li.dropdown.open > .dropdown-toggle,
 .main-nav .navbar .nav li.dropdown.active > .dropdown-toggle,
 .main-nav .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  color: #3c86c3;
+  color: #51862F;
   background-color: #f9f9f9;
-  border-top: 2px solid #3c86c3;
+  border-top: 2px solid #51862F;
   box-shadow: none;
 }
 
