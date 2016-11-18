@@ -28,7 +28,7 @@
       	 	 <hr>
 
 
-      	 	 {!! Form::open(array('route' => 'como.store', 'data-parsley-validate' => '')) !!}
+      	 	 {!! Form::open(array('route' => 'como.store', 'data-parsley-validate' => '', 'files' => true)) !!}
       	 	 	  {{ Form::label('title', 'Titulo:')}}
       	 	 	  {{ Form::text('title', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '255')) }}
 
@@ -40,7 +40,6 @@
 
 				  {{ Form::submit('Enviar', array('class' => 'btn btn-success btn-lg btn-block', 'style' => 'margin-top: 20px;')) }}
 			 {!! Form::close() !!}
-
       	 </div>
       </div>
 </div>

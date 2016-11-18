@@ -29,6 +29,26 @@ Route::resource('como', 'ComoController');
 */
 
 Route::auth();
-Route::get('/profile', 'UserController@profile');
-Route::post('/profile', 'UserController@update_avatar');
+	
+
+	Route::get('/profile', [
+        'uses' => 'UserController@profile',
+        'as' => 'profile'
+    ]);
+	Route::post('/profile', 'UserController@update_avatar');
+
+    Route::get('/EditarPerfil', [
+        'uses' => 'UserController@getAccount',
+        'as' => 'account'
+    ]);
+    //Update Account
+    Route::post('/updateperfil', [
+        'uses' => 'UserController@postSaveAccount',
+        'as' => 'account.save'
+    ]);
+
+    Route::get('/userimage/{filename}', [
+        'uses' => 'UserController@getUserImage',
+        'as' => 'account.image'
+    ]);
 

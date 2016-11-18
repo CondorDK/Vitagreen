@@ -44,19 +44,20 @@
 					<dd>{{ date('M j, Y h:ia', strtotime($como->updated_at)) }}</dd>
 				</dl>
 				<hr>
+
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-3">
 						{!! Html::linkRoute('como.edit', 'Editar', array($como->id), array('class' => 'btn btn-primary btn-block')) !!}
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-3">
 						{!! Form::open(['route' => ['como.destroy', $como->id], 'method' => 'DELETE']) !!}
 
 						{!! Form::submit('Borrar', ['class' => 'btn btn-danger btn-block']) !!}
 
 						{!! Form::close() !!}
 					</div>
-				<div class="col-sm-12">
-						{!! Html::linkRoute('como.index', '<< Volver', array($como->id), array('class' => 'btn btn-info btn-block')) !!}
+				<div class="col-sm-6">
+						{!! Html::linkRoute('como.index', '<< Volver', array($como->id), array('class' => 'btn btn-primary btn-block')) !!}
 					</div>
 				</div>
 			</div>

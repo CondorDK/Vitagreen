@@ -25,18 +25,18 @@
 				</dl>
 				<hr>
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-3">
 						{!! Html::linkRoute('necesito.edit', 'Editar', array($necesito->id), array('class' => 'btn btn-primary btn-block')) !!}
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-3">
 						{!! Form::open(['route' => ['necesito.destroy', $necesito->id], 'method' => 'DELETE']) !!}
 
 						{!! Form::submit('Borrar', ['class' => 'btn btn-danger btn-block']) !!}
 
 						{!! Form::close() !!}
 					</div>
-					<div class="col-sm-12">
-						{!! Html::linkRoute('necesito.index', '<< Volver', array($necesito->id), array('class' => 'btn btn-info btn-block')) !!}
+					<div class="col-sm-6">
+						{!! Html::linkRoute('necesito.index', '<< Volver', array($necesito->id), array('class' => 'btn btn-primary btn-block')) !!}
 					</div>
 				</div>		
 			</div>
