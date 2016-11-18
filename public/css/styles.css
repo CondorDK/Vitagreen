@@ -72,7 +72,7 @@ figure {
   padding-left: 30px;
   font-size: 14px;
   font-weight: bold;
-  background-color: #3c86c3;
+  background-color: #51862F;
   background-image: none;
   border-color: transparent;
   border-radius: 4px;
@@ -87,7 +87,7 @@ figure {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #408FD0;
+  background-color: #a6d175;
 }
 
 /*
@@ -170,7 +170,7 @@ figure {
 }
 
 .main-nav .navbar .brand {
-  margin-top: 7px;
+  margin-top: 0px;
   margin-left: 10px;
 }
 
@@ -1018,13 +1018,13 @@ footer .footer-widget .social-icons li:hover {
 
 .subfooter {
   padding: 10px 0 5px;
-  background-color: #dde0e3;
+  background-color: #B2C08A;
   border-top: 1px solid #fff;
 }
 
 .subfooter p.rights {
   font-size: 10px;
-  color: #979b9d;
+  color: #3d3d3d;
 }
 
 /*
@@ -1276,9 +1276,9 @@ footer .footer-widget .social-icons li:hover {
 .widgets-container .widget .search-form button.btn {
   color: #fff;
   text-shadow: none;
-  background-color: #3c86c3;
+  background-color: #51862F;
   background-image: none;
-  border: 1px solid #3c86c3;
+  border: 1px solid #51862F;
   border-color: transparent;
   filter: none;
   box-shadow: none;
@@ -1769,9 +1769,9 @@ footer .footer-widget .social-icons li:hover {
 .not-found-error .error-form-container .search-form button.btn {
   color: #fff;
   text-shadow: none;
-  background-color: #3c86c3;
+  background-color: #51862F;
   background-image: none;
-  border: 1px solid #3c86c3;
+  border: 1px solid #51862F;
   border-color: transparent;
   filter: none;
   box-shadow: none;

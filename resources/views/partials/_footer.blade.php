@@ -1,5 +1,5 @@
     <!-- ============================  Footer Starts ============================ -->
-  <footer>
+  <!-- <footer>
     <div class="container">
       <div class="row">
         <div class="span3">
@@ -7,8 +7,8 @@
             <h5 class="title">TEXT WIDGET</h5>
             <p class="content">Brownie candy ice cream. Jelly chupa chups chupa chups toocake. Dessert apple pie lemon drops. </p>
             <p class="content">Candy canes tiramisu wypa gummies jujubes macaroon Sweet roll biscuiti apple pie sweet.</p>
-          </div> <!-- end footer-widget -->
-        </div> <!-- end span3 -->
+          </div>
+        </div>
 
         <div class="span3">
           <div class="footer-widget">
@@ -19,9 +19,9 @@
                 <input class="input-large" id="appendedInput" type="text">
                 <span class="add-on"><i class="icon-envelope-alt"></i></span>
               </div>
-            </form> <!-- end subscribe-form -->
-          </div> <!-- end footer-widget -->
-        </div> <!-- end span3 -->
+            </form>
+          </div>
+        </div>
 
         <div class="span3">
           <div class="footer-widget">
@@ -30,9 +30,9 @@
               <li>@ Brownie candy ice cream. Jelly chupa chups chupa chups toocake. <p><small>7 Hours ago</small></p></li>
               <li>@Brownie candy ice cream. Jelly chupa chups chupa chups toocake. <p><small>7 Hours ago</small></p></li>
             </ul>
-           
-          </div> <!-- end footer-widget -->
-        </div> <!-- end span3 -->
+
+          </div>
+        </div>
 
         <div class="span3">
           <div class="footer-widget">
@@ -44,22 +44,28 @@
               <li><a href="#"><i class="icon-google-plus icon-large"></i></a></li>
               <li><a href="#"><i class="icon-linkedin icon-large"></i></a></li>
               <li><a href="#"><i class="icon-github-alt icon-large"></i></a></li>
-            </ul> <!-- end social-icons -->
-          </div> <!-- end footer-widget -->
-        </div> <!-- end span3 -->
+            </ul>
+          </div>
+        </div>
 
-      </div> <!-- end row -->
-    </div> <!-- end container -->
-  </footer>
+      </div>
+    </div>
+  </footer> -->
+
+
+  <!-- La mami de los footer -->
   <section class="subfooter">
     <div class="container">
       <div class="row">
-        <div class="span12">
-          <p class="rights">Copyright © 2013 Rohit Creations. All rights reserved.</p>
-        </div> <!-- end span12 -->
+        <center>
+          <div class="span12">
+            <p class="rights">Copyright © 2016 Vitagreen Team. Todos los derechos reservados.</p>
+          </div>
+        </center>
       </div> <!-- end row -->
     </div> <!-- end container -->
   </section> <!-- end subfooter -->
 
 
-    <!-- ============================  Footer Ends ============================ -->		
+
+    <!-- ============================  Footer Ends ============================ -->

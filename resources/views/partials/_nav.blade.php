@@ -33,7 +33,7 @@
             </a>
 
             <!-- Be sure to leave the brand out there if you want it shown -->
-            <a class="brand" href="{{ url('/') }}"><img src="images/vita.png" alt="logo" width="100" height="100"></a>
+            <a class="brand" href="{{ url('/') }}"><img src="images/vita.png" alt="logo" width="120" height="120"></a>
 
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
@@ -45,11 +45,16 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Caracteristicas <i class="icon-angle-down"></i></a>
                   <ul class="dropdown-menu">
                     <li><span class="list-circle"></span> <a href="{{ url('/materiales') }}">Materiales</a></li>
-                    <li><span class="list-circle"></span> <a href="{{ url('/servicios') }}">Servicios</a></li>
-                    <li><span class="list-circle"></span> <a href="{{ url('/acercade') }}">Acerca De</a></li>
+
+                    <!-- Ninio con caca
+                     <li><span class="list-circle"></span> <a href="{{ url('/servicios') }}">Servicios</a></li>
+                     <li><span class="list-circle"></span> <a href="{{ url('/acercade') }}">Acerca De</a></li> -->
+
                   </ul>
                 </li>
-                <li><a href="{{ url('/contacto') }}">Contacto</a></li>
+                <!--
+                Contacto con caca
+                <li><a href="{{ url('/contacto') }}">Contacto</a></li>-->
 
 
                 <!-- Authentication Links -->
