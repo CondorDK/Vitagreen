@@ -6,8 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Abhitheawesomecoder\\Laraveleditprofile\\EditprofileController' => $vendorDir . '/abhitheawesomecoder/laravel-edit-profile/src/EditprofileController.php',
-    'Abhitheawesomecoder\\Laraveleditprofile\\EditprofileServiceProvider' => $vendorDir . '/abhitheawesomecoder/laravel-edit-profile/src/EditprofileServiceProvider.php',
+    'AddImageColToComo' => $baseDir . '/database/migrations/2016_11_16_043934_add_image_col_to_como.php',
     'App\\Como' => $baseDir . '/app/Como.php',
     'App\\Console\\Commands\\Inspire' => $baseDir . '/app/Console/Commands/Inspire.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
@@ -2805,7 +2804,7 @@ return array(
     'Symfony\\Polyfill\\Util\\BinaryNoFuncOverload' => $vendorDir . '/symfony/polyfill-util/BinaryNoFuncOverload.php',
     'Symfony\\Polyfill\\Util\\BinaryOnFuncOverload' => $vendorDir . '/symfony/polyfill-util/BinaryOnFuncOverload.php',
     'Symfony\\Polyfill\\Util\\TestListener' => $vendorDir . '/symfony/polyfill-util/TestListener.php',
-    'TengoNecesitoComoTable' => $baseDir . '/database/migrations/2016_11_17_123211_TengoNecesitoComoTable.php',
+    'TengoNecesitoComoTable' => $baseDir . '/database/migrations/2016_11_16_041815_TengoNecesitoComoTable.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
     'Webmozart\\Assert\\Assert' => $vendorDir . '/webmozart/assert/src/Assert.php',
