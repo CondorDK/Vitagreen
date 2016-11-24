@@ -6,5 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tengo extends Model
 {
-    public $table = "tengo";
+    protected $fillable = [
+    	'title',
+    	'body',
+    	'categoria_id'
+    ];
+
+    public function user()
+    {
+    	return $this->belongsTo(User::class);
+    }
+
+    public function categoria()
+    {
+    	return $this->belongsTo('App\Categoria');
+    }
 }

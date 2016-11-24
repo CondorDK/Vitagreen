@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use App\Http\Requests\TengoRequest;
 use App\Tengo;
-use Session;
+use App\Categoria;
 
 class TengoController extends Controller
 {
@@ -16,11 +16,18 @@ class TengoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function __construct()
     {
-      
-        $tengo = Tengo::paginate(50);
-        return view('tengo.index')->withTengo($tengo);
+        $this->middleware('auth');
+    }
+
+    
+    public function index(Request $request)
+    {
+        $teng = Tengo::where('user_id', $request->user()->id)->get();
+        return view('tengo.index',[
+            'teng' => $teng
+            ]);
     }
 
     /**
@@ -30,8 +37,8 @@ class TengoController extends Controller
      */
     public function create()
     {
-        return view ('tengo.create');
-        //
+        $categorias = Categoria::all();
+        return view('tengo.new')->withCategorias($categorias);
     }
 
     /**
@@ -40,25 +47,10 @@ class TengoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(TengoRequest $request)
     {
-        // validando la data
-        $this->validate($request, array(
-                'title' => 'required|max:225',
-                'body'  => 'required'
-            ));
-
-        // store en la base de datos
-        $tengo = new Tengo;
-
-        $tengo->title = $request->title;
-        $tengo->body = $request->body;
-
-        $tengo->save();
-
-        Session::flash('success', 'El mensaje se ha enviado correctamente!');
-
-        return redirect()->route('tengo.show', $tengo->id);
+        $request->user()->tengos()->create($request->all());
+        return redirect()->route('tengo.show', $request->id)->with('success','Post creado correctamente :3');
     }
 
     /**
@@ -79,12 +71,12 @@ class TengoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Tengo $tengo)
     {
-        // busca los post en la database y guarda
-        $tengo = Tengo::find($id);
-        // devuelve la vista
-        return view('tengo.edit')->withTengo($tengo);
+        $categorias = Categoria::all();
+        return view('tengo.edit',[
+            'tengo' => $tengo
+            ])->withCategorias($categorias);
     }
 
     /**
@@ -94,29 +86,11 @@ class TengoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Tengo $tengo)
     {
-        // Validando la data
-        $this->validate($request, array(
-                'title' => 'required|max:225',
-                'body'  => 'required'
-            ));
-
-        // Guarda la data en database
-        $tengo = Tengo::find($id);
-
-        $tengo->title = $request->input('title');
-        $tengo->body = $request->input('body');
-
-        $tengo->save();
-
-        // Mensaje flash
-        Session::flash('success', 'Se Ha Editado Correctamente.');
-
-
-
-        // redirect with flash data to tengo.show
-        return redirect()->route('tengo.show', $tengo->id);
+        $this->authorize('owner', $tengo);
+        $tengo->update($request->all());
+        return redirect('/tengo')->with('success','Post actualizado correctamente :3');
     }
 
     /**
@@ -125,13 +99,10 @@ class TengoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Tengo $tengo)
     {
-        $tengo = Tengo::find($id);
-
+        $this->authorize('owner', $tengo);
         $tengo->delete();
-
-        Session::flash('success', 'El Post Ha Sido Borrado Correctamente');
-        return redirect()->route('tengo.index');
+        return redirect('/tengo')->with('success','Post Eliminado correctamente :3');
     }
 }

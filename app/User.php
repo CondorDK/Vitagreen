@@ -23,4 +23,19 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function necesitos()
+    {
+        return $this->hasMany(Necesito::class);
+    }
+
+    public function tengos()
+    {
+        return $this->hasMany(Tengo::class);
+    }
+
+    public function comos()
+    {
+        return $this->hasMany(Como::class);
+    }
 }

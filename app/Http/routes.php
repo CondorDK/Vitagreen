@@ -11,15 +11,18 @@
 |
 */
 
-Route::get('/', 'PagesController@getIndex');
-Route::get('materiales', 'PagesController@getMaterial');
-Route::get('acercade', 'PagesController@getAcercaDe');
-Route::get('servicios', 'PagesController@getServicios');
-Route::get('contacto', 'PagesController@getContacto');
-Route::resource('tengo', 'TengoController');
-Route::resource('necesito', 'NecesitoController');
-Route::resource('como', 'ComoController');
+Route::get('/', function () {
+    return view('welcome');
+});
 
+Route::resource('necesito','NecesitoController');
+Route::resource('tengo','TengoController');
+Route::resource('como','ComoController');
+Route::resource('categorias','CategoriaController', ['except' => ['create']]);
+	
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
 
 /*
 |--------------------------------------------------------------------------
@@ -27,9 +30,6 @@ Route::resource('como', 'ComoController');
 |--------------------------------------------------------------------------
 |
 */
-
-Route::auth();
-	
 
 	Route::get('/profile', [
         'uses' => 'UserController@profile',
@@ -46,9 +46,3 @@ Route::auth();
         'uses' => 'UserController@postSaveAccount',
         'as' => 'account.save'
     ]);
-
-    Route::get('/userimage/{filename}', [
-        'uses' => 'UserController@getUserImage',
-        'as' => 'account.image'
-    ]);
-

@@ -13,7 +13,9 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'App\Model' => 'App\Policies\ModelPolicy',
+        'App\Necesito' => 'App\Policies\NecesitoPolicy',
+        'App\Tengo' => 'App\Policies\TengoPolicy',
+        'App\Como' => 'App\Policies\ComoPolicy',
     ];
 
     /**
@@ -26,6 +28,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies($gate);
 
-        //
+        // $gate->define('read-necesito',function($user, $necesito){
+        //     return $user->id === $necesito->user_id;
+        // });
     }
 }

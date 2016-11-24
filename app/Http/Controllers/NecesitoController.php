@@ -5,11 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-
-use App\Http\Controllers\Controller;
+use App\Http\Requests\NecesitoRequest;
 use App\Necesito;
-use Session;
-
+use App\Categoria;
 class NecesitoController extends Controller
 {
     /**
@@ -17,11 +15,17 @@ class NecesitoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function __construct()
     {
-      
-        $necesito = Necesito::all();
-        return view('necesito.index')->withNecesito($necesito);
+        $this->middleware('auth');
+    }
+
+    public function index(Request $request)
+    {
+        $necesit = Necesito::where('user_id', $request->user()->id)->get();
+        return view('necesito.index',[
+            'necesit' => $necesit
+            ]);
     }
 
     /**
@@ -31,8 +35,8 @@ class NecesitoController extends Controller
      */
     public function create()
     {
-        return view ('necesito.create');
-        //
+        $categorias = Categoria::all();
+        return view('necesito.new')->withCategorias($categorias);
     }
 
     /**
@@ -41,25 +45,10 @@ class NecesitoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(NecesitoRequest $request)
     {
-        // validando la data
-        $this->validate($request, array(
-                'title' => 'required|max:225',
-                'body'  => 'required'
-            ));
-
-        // store en la base de datos
-        $necesito = new Necesito;
-
-        $necesito->title = $request->title;
-        $necesito->body = $request->body;
-
-        $necesito->save();
-
-        Session::flash('success', 'El mensaje se ha enviado correctamente!');
-
-        return redirect()->route('necesito.show', $necesito->id);
+        $request->user()->necesitos()->create($request->all());
+        return redirect()->route('necesito.show', $request->id)->with('success','Post creado correctamente :3');
     }
 
     /**
@@ -80,12 +69,12 @@ class NecesitoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Necesito $necesito)
     {
-        // busca los post en la database y guarda
-        $necesito = Necesito::find($id);
-        // devuelve la vista
-        return view('necesito.edit')->withNecesito($necesito);
+        $categorias = Categoria::all();
+        return view('necesito.edit',[
+            'necesito' => $necesito
+            ])->withCategorias($categorias);
     }
 
     /**
@@ -95,29 +84,11 @@ class NecesitoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Necesito $necesito)
     {
-        // Validando la data
-        $this->validate($request, array(
-                'title' => 'required|max:225',
-                'body'  => 'required'
-            ));
-
-        // Guarda la data en database
-        $necesito = Necesito::find($id);
-
-        $necesito->title = $request->input('title');
-        $necesito->body = $request->input('body');
-
-        $necesito->save();
-
-        // Mensaje flash
-        Session::flash('success', 'Se Ha Guardo Correctamente.');
-
-
-
-        // redirect with flash data to necesito.show
-        return redirect()->route('necesito.show', $necesito->id);
+        $this->authorize('owner', $necesito);
+        $necesito->update($request->all());
+        return redirect('/necesito')->with('success','Post actualizado correctamente :3');
     }
 
     /**
@@ -126,13 +97,10 @@ class NecesitoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Necesito $necesito)
     {
-        $necesito = Necesito::find($id);
-
+        $this->authorize('owner', $necesito);
         $necesito->delete();
-
-        Session::flash('success', 'El Post Ha Sido Borrado Correctamente');
-        return redirect()->route('necesito.index');
+        return redirect('/necesito')->with('success','Post Eliminado correctamente :3');
     }
 }

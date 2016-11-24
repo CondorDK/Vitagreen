@@ -1,54 +1,46 @@
-@extends('layouts.main')
-
-@section('title', '| Todos Los Posts Necesito')
-
-
+@extends('layouts.app')
 
 @section('content')
-	
 	<div class="container">
-	<div class="row">
-		<div class="col-md-10">
-			<h1>Todos Los Posts</h1>
-		</div>
+		<div class="row">
+			@include('alerts.success')
+				<div class="col-md-10">
+					<h1>Todos Los Posts</h1>
+				</div>
 
-		<div class="col-md-2">
-			<a href="{{ route('necesito.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing">Crear Nueva Entrada</a>
-		</div>
-		<div class="col-md-12">
-			<hr>
-		</div>
-	</div> <!-- end of .row-->
-
-	<div class="row">
-		<div class="col-md-12">
+				<div class="col-md-4">
+					<a href="{{ route('necesito.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing">Crear Nueva Entrada</a>
+				</div>
+				<div class="col-md-12">
+					<hr>
+				</div>
+			</div>
 			<table class="table">
 				<thead>
-					<th>#</th>
-					<th>Titulo</th>
-					<th>Mensaje</th>
-					<th>Creado Hace</th>
-					<th></th>
+					<tr>
+						<th>Titulo</th>
+						<th>Mensaje</th>
+						<th>Creado El</th>
+					</tr>
 				</thead>
-
 				<tbody>
-					
-					@foreach ($necesito as $necesito)
-
+				@foreach($necesit as $necesito)
+					@can('owner', $necesito)
 						<tr>
-							<th>{{ $necesito->id }}</th>
 							<td>{{ $necesito->title }}</td>
 							<td>{{ substr(strip_tags($necesito->body), 0, 50) }}{{ strlen(strip_tags($necesito->body)) > 50 ? "..." : "" }}</td>
 							<td>{{ date('M j, Y', strtotime($necesito->created_at)) }}</td>
-							<td><a href="{{ route('necesito.show', $necesito->id) }}"  class="btn btn-default btn-sm">Ver</a><a href="{{ route('necesito.edit', $necesito->id) }}" class="btn btn-default btn-sm">Editar</a></td>					
+							<td>
+								<div class="btn-group">
+									{{ link_to_route('necesito.edit', $title = 'Editar', $parameter = $necesito, $attributes = ['class' => 'btn btn-primary btn-sm']) }}
+									{{ link_to_route('necesito.show', $title = 'Ver', $parameter = $necesito, $attributes = ['class' => 'btn btn-info btn-sm']) }}
+								</div>
+							</td>
 						</tr>
-
-					@endforeach
+					@endcan
+				@endforeach
 				</tbody>
 			</table>
 		</div>
-	</div>
-</div>
 
-@stop
-
+@endsection

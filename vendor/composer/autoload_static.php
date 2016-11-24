@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
+class ComposerStaticInita4318dfa23591013fca4d8de527badd2
 {
     public static $files = array (
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
@@ -290,7 +290,9 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
     );
 
     public static $classMap = array (
-        'AddImageColToComo' => __DIR__ . '/../..' . '/database/migrations/2016_11_16_043934_add_image_col_to_como.php',
+        'AddCategoriasIdToPosts' => __DIR__ . '/../..' . '/database/migrations/2016_11_25_050458_add_categorias_id_to_posts.php',
+        'AddImageColToComos' => __DIR__ . '/../..' . '/database/migrations/2016_11_24_102149__add_image_col_to_comos.php',
+        'App\\Categoria' => __DIR__ . '/../..' . '/app/Categoria.php',
         'App\\Como' => __DIR__ . '/../..' . '/app/Como.php',
         'App\\Console\\Commands\\Inspire' => __DIR__ . '/../..' . '/app/Console/Commands/Inspire.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
@@ -298,10 +300,11 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthController.php',
         'App\\Http\\Controllers\\Auth\\PasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordController.php',
+        'App\\Http\\Controllers\\CategoriaController' => __DIR__ . '/../..' . '/app/Http/Controllers/CategoriaController.php',
         'App\\Http\\Controllers\\ComoController' => __DIR__ . '/../..' . '/app/Http/Controllers/ComoController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\NecesitoController' => __DIR__ . '/../..' . '/app/Http/Controllers/NecesitoController.php',
-        'App\\Http\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/PagesController.php',
         'App\\Http\\Controllers\\TengoController' => __DIR__ . '/../..' . '/app/Http/Controllers/TengoController.php',
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -309,9 +312,15 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\ComoRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ComoRequest.php',
+        'App\\Http\\Requests\\NecesitoRequest' => __DIR__ . '/../..' . '/app/Http/Requests/NecesitoRequest.php',
         'App\\Http\\Requests\\Request' => __DIR__ . '/../..' . '/app/Http/Requests/Request.php',
+        'App\\Http\\Requests\\TengoRequest' => __DIR__ . '/../..' . '/app/Http/Requests/TengoRequest.php',
         'App\\Jobs\\Job' => __DIR__ . '/../..' . '/app/Jobs/Job.php',
         'App\\Necesito' => __DIR__ . '/../..' . '/app/Necesito.php',
+        'App\\Policies\\ComoPolicy' => __DIR__ . '/../..' . '/app/Policies/ComoPolicy.php',
+        'App\\Policies\\NecesitoPolicy' => __DIR__ . '/../..' . '/app/Policies/NecesitoPolicy.php',
+        'App\\Policies\\TengoPolicy' => __DIR__ . '/../..' . '/app/Policies/TengoPolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
@@ -342,7 +351,11 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
         'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
+        'CreateCategoriasTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_24_045633_create_categorias_table.php',
+        'CreateComosTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_24_091436_create_comos_table.php',
+        'CreateNecesitosTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_24_013027_create_necesitos_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreateTengosTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_24_083655_create_tengos_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
@@ -1582,6 +1595,7 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'League\\Flysystem\\Plugin\\PluginNotFoundException' => __DIR__ . '/..' . '/league/flysystem/src/Plugin/PluginNotFoundException.php',
         'League\\Flysystem\\ReadInterface' => __DIR__ . '/..' . '/league/flysystem/src/ReadInterface.php',
         'League\\Flysystem\\RootViolationException' => __DIR__ . '/..' . '/league/flysystem/src/RootViolationException.php',
+        'League\\Flysystem\\SafeStorage' => __DIR__ . '/..' . '/league/flysystem/src/SafeStorage.php',
         'League\\Flysystem\\UnreadableFileException' => __DIR__ . '/..' . '/league/flysystem/src/UnreadableFileException.php',
         'League\\Flysystem\\Util' => __DIR__ . '/..' . '/league/flysystem/src/Util.php',
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
@@ -2101,6 +2115,7 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'PHP_Token_STRING' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_STRING_CAST' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_STRING_VARNAME' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'PHP_Token_SUPER' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_SWITCH' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_Stream' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token/Stream.php',
         'PHP_Token_Stream_CachingFactory' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token/Stream/CachingFactory.php',
@@ -2115,6 +2130,7 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'PHP_Token_UNSET' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_UNSET_CAST' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_USE' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'PHP_Token_USE_FUNCTION' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_VAR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_VARIABLE' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_WHERE' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
@@ -3088,7 +3104,6 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
         'Symfony\\Polyfill\\Util\\BinaryNoFuncOverload' => __DIR__ . '/..' . '/symfony/polyfill-util/BinaryNoFuncOverload.php',
         'Symfony\\Polyfill\\Util\\BinaryOnFuncOverload' => __DIR__ . '/..' . '/symfony/polyfill-util/BinaryOnFuncOverload.php',
         'Symfony\\Polyfill\\Util\\TestListener' => __DIR__ . '/..' . '/symfony/polyfill-util/TestListener.php',
-        'TengoNecesitoComoTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_16_041815_TengoNecesitoComoTable.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
@@ -3159,10 +3174,10 @@ class ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitb68b7fe9f9935cea0348f0a26bc16354::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita4318dfa23591013fca4d8de527badd2::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita4318dfa23591013fca4d8de527badd2::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInita4318dfa23591013fca4d8de527badd2::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInita4318dfa23591013fca4d8de527badd2::$classMap;
 
         }, null, ClassLoader::class);
     }

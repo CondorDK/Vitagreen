@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-
-use App\Http\Controllers\Controller;
+use App\Http\Requests\ComoRequest;
 use App\Como;
-use Session;
 use Image;
+use App\Categoria;
+
 class ComoController extends Controller
 {
     /**
@@ -17,10 +17,17 @@ class ComoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function __construct()
     {
-        $como = Como::all();
-        return view('como.index')->withComo($como);
+        $this->middleware('auth');
+    }
+
+    public function index(Request $request)
+    {
+        $com = Como::where('user_id', $request->user()->id)->get();
+        return view('como.index',[
+            'com' => $com
+            ]);
     }
 
     /**
@@ -30,8 +37,8 @@ class ComoController extends Controller
      */
     public function create()
     {
-        return view ('como.create');
-        //
+        $categorias = Categoria::all();
+        return view('como.new')->withCategorias($categorias);
     }
 
     /**
@@ -40,7 +47,7 @@ class ComoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ComoRequest $request)
     {
         // validando la data
         $this->validate($request, array(
@@ -53,6 +60,7 @@ class ComoController extends Controller
 
         $como->title = $request->title;
         $como->body = $request->body;
+        $como->categoria_id = $request->categoria_id;
 
         //guardar imagen
         if ($request->hasFile('featured_image')){
@@ -66,7 +74,6 @@ class ComoController extends Controller
 
         $como->save();
 
-        Session::flash('success', 'El mensaje se ha enviado correctamente!');
 
         return redirect()->route('como.show', $como->id);
     }
@@ -89,14 +96,13 @@ class ComoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Como $como)
     {
-        // busca los post en la database y guarda
-        $como = Como::find($id);
-        // devuelve la vista
-        return view('como.edit')->withComo($como);
-
-        }
+        $categorias = Categoria::all();
+        return view('como.edit',[
+            'como' => $como
+            ])->withCategorias($categorias);
+    }
 
     /**
      * Update the specified resource in storage.
@@ -105,29 +111,11 @@ class ComoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Como $como)
     {
-        // Validando la data
-        $this->validate($request, array(
-                'title' => 'required|max:225',
-                'body'  => 'required'
-            ));
-
-        // Guarda la data en database
-        $como = Como::find($id);
-
-        $como->title = $request->input('title');
-        $como->body = $request->input('body');
-
-        $como->save();
-
-        // Mensaje flash
-        Session::flash('success', 'Se Ha Guardo Correctamente.');
-
-
-
-        // redirect with flash data to necesito.show
-        return redirect()->route('como.show', $como->id);
+        $this->authorize('owner', $como);
+        $como->update($request->all());
+        return redirect('/como')->with('success','Post actualizado correctamente :3');
     }
 
     /**
@@ -136,13 +124,10 @@ class ComoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Como $como)
     {
-        $como = Como::find($id);
-
+        $this->authorize('owner', $como);
         $como->delete();
-
-        Session::flash('success', 'El Post Ha Sido Borrado Correctamente');
-        return redirect()->route('como.index');
+        return redirect('/como')->with('success','Post Eliminado correctamente :3');
     }
 }
