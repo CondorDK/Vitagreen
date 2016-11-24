@@ -163,7 +163,7 @@
           <div class="span4">
             <div class="recent-post">
               <figure class="recent-post-img">
-                <img src="images/maxresdefault1.jpg" alt="img">
+                <img src="/images/{{$com->image}}">
               </figure> <!-- end recent-post-img -->
 
 
