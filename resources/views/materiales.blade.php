@@ -16,7 +16,7 @@
         <div class="row">
           <div class="span12">
             <h1 class="title center">¡Materiales!</h1>
-            <h6 class="subtitle center">¡Elegi cualquier material!</h6>
+            <h3 class="subtitle center">¡Elegi cualquier material!</h3>
           </div> <!-- end span12 -->
         </div> <!-- end row -->
       </div> <!-- end container -->
@@ -37,7 +37,7 @@
                           <li><a href="tengo">Tengo</a></li>
                           <li><a href="necesito">Necesito</a></li>
                           <li><a href="como">¿Como?</a></li>
-                        </ul>           
+                        </ul>
                       </li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
                           <li><a href="tengo">Tengo</a></li>
                           <li><a href="necesito">Necesito</a></li>
                           <li><a href="como">¿Como?</a></li>
-                        </ul>           
+                        </ul>
                       </li>
                     </ul>
                 </div>
@@ -72,7 +72,7 @@
                           <li><a href="tengo">Tengo</a></li>
                           <li><a href="necesito">Necesito</a></li>
                           <li><a href="como">¿Como?</a></li>
-                        </ul>           
+                        </ul>
                       </li>
                     </ul>
                 </div>
@@ -89,7 +89,7 @@
                           <li><a href="tengo">Tengo</a></li>
                           <li><a href="necesito">Necesito</a></li>
                           <li><a href="como">¿Como?</a></li>
-                        </ul>           
+                        </ul>
                       </li>
                     </ul>
                 </div>
@@ -100,7 +100,7 @@
 
 
 
-        </div>    
+        </div>
     </div>
 </div>
 

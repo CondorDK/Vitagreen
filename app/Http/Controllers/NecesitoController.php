@@ -23,7 +23,7 @@ class NecesitoController extends Controller
     public function index(Request $request)
     {
         $necesit = Necesito::all();
-        
+
         return view('necesito.index',[
             'necesit' => $necesit
             ]);
@@ -89,7 +89,7 @@ class NecesitoController extends Controller
     {
         // $this->authorize('owner', $necesito);
         $necesito->update($request->all());
-        return redirect('/necesito')->with('success','Post actualizado correctamente :3');
+        return redirect('/necesito')->with('success','Post actualizado correctamente');
     }
 
     /**
@@ -102,6 +102,6 @@ class NecesitoController extends Controller
     {
         // $this->authorize('owner', $necesito);
         $necesito->delete();
-        return redirect('/necesito')->with('success','Post Eliminado correctamente :3');
+        return redirect('/necesito')->with('success','Post Eliminado correctamente');
     }
 }

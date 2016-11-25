@@ -115,7 +115,7 @@ class ComoController extends Controller
     {
         // $this->authorize('owner', $como);
         $como->update($request->all());
-        return redirect('/como')->with('success','Post actualizado correctamente :3');
+        return redirect('/como')->with('success','Post actualizado correctamente');
     }
 
     /**
@@ -128,6 +128,6 @@ class ComoController extends Controller
     {
         // $this->authorize('owner', $como);
         $como->delete();
-        return redirect('/como')->with('success','Post Eliminado correctamente :3');
+        return redirect('/como')->with('success','Post Eliminado correctamente');
     }
 }

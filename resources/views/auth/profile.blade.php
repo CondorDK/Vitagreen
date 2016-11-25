@@ -12,7 +12,7 @@
                 <a class="btn btn-warning btn-sm" href = "{{URL::route('account',['id'=>$user['id']])}}">
                     Editar
                 </a>
-                <label>Cargar Foto de Perfil</label>
+                <label>Cargar foto de perfil</label>
                 <input type="file" name="avatar">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input type="submit" class="pull-right btn btn-sm btn-primary">

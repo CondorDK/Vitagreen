@@ -5,11 +5,12 @@
 		<div class="row">
 			@include('alerts.success')
 				<div class="col-md-10">
-					<h1>Todos Los Posts</h1>
+					<h1>Tengo</h1>
+					<h3>Describe los materiales que deseas compartir con una nueva entrada</h3>
 				</div>
 
 				<div class="col-md-4">
-					<a href="{{ route('tengo.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing">Crear Nueva Entrada</a>
+					<a href="{{ route('tengo.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing glyphicon glyphicon-plus">Crear nueva entrada</a>
 				</div>
 				<div class="col-md-12">
 					<hr>

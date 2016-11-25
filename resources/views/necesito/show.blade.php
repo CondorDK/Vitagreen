@@ -8,7 +8,7 @@
 	<div class="row">
 		<div class="col-md-8">
 			<h1>{{ $necesito->title }}</h1>
-			
+
 			<p class="lead">{!! $necesito->body !!}</p>
 			<hr>
 			<p>Posteado en: {{ $necesito->categoria->name }}</p>
@@ -23,7 +23,7 @@
 				</dl>
 
 				<dl class="dl-horizontal">
-					<label>Creado Hace:</label>
+					<label>Creado hace:</label>
 					<p>{{ date('M j, Y h:ia', strtotime($necesito->created_at)) }}</p>
 				</dl>
 
@@ -44,7 +44,7 @@
 						{!! Form::close() !!}
 					</div>
 				</div>
-				<div class="row">	
+				<div class="row">
 					<div class="col-md-12">
 						{!! Html::linkRoute('necesito.index', '<< Volver', array($necesito->id), array('class' => 'btn btn-info btn-block')) !!}
 					</div>

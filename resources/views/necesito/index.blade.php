@@ -5,22 +5,23 @@
 		<div class="row">
 			@include('alerts.success')
 				<div class="col-md-10">
-					<h1>Todos Los Posts</h1>
+					<h1>Necesito</h1>
+					<h3>Describe el material que necesites en una entrada</h3>
 				</div>
 
 				<div class="col-md-4">
-					<a href="{{ route('necesito.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing">Crear Nueva Entrada</a>
+
+						<a href="{{ route('necesito.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing glyphicon glyphicon-plus">    Crear Nueva Entrada</a>
 				</div>
 				<div class="col-md-12">
 					<hr>
-				</div>
 			</div>
 			<table class="table">
 				<thead>
 					<tr>
 						<th>Titulo</th>
 						<th>Mensaje</th>
-						<th>Creado El</th>
+						<th>Creado el</th>
 					</tr>
 				</thead>
 				<tbody>

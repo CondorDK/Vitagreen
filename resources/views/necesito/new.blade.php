@@ -4,7 +4,9 @@
 	<div class="container">
 		<div class='row'>
 			<div class='col-md-8 col-md-offset-2'>
-				<center><h1>Crear Nueva Entrada</h1></center>
+				<center>
+					<h1>Necesito</h1>
+					<h3>Crear nueva entrada</h3></center>
 					@include('alerts.errors')
 
 					{!! Form::open(['route' => 'necesito.store', 'method' => 'POST']) !!}

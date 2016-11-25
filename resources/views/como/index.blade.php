@@ -5,11 +5,12 @@
 		<div class="row">
 			@include('alerts.success')
 				<div class="col-md-10">
-					<h1>Todos Los Posts</h1>
+					<h1>¿Como reciclo?</h1>
+					<h3>Comparti con la comunidad tus conocimientos a la hora de reciclar</h3>
 				</div>
 
 				<div class="col-md-4">
-					<a href="{{ route('como.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing">Crear Nueva Entrada</a>
+					<a href="{{ route('como.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing glyphicon glyphicon-plus">   Crear Nueva Entrada</a>
 				</div>
 				<div class="col-md-12">
 					<hr>
