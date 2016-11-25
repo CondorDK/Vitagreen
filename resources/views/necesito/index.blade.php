@@ -21,6 +21,7 @@
 					<tr>
 						<th>Titulo</th>
 						<th>Mensaje</th>
+						<th>Categoria</th>
 						<th>Creado el</th>
 					</tr>
 				</thead>
@@ -30,6 +31,7 @@
 						<tr>
 							<td>{{ $necesito->title }}</td>
 							<td>{{ substr(strip_tags($necesito->body), 0, 50) }}{{ strlen(strip_tags($necesito->body)) > 50 ? "..." : "" }}</td>
+							<td>{{ $necesito->categoria->name }}</td>
 							<td>{{ date('M j, Y', strtotime($necesito->created_at)) }}</td>
 							<td>
 								<div class="btn-group">

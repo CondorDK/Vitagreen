@@ -21,6 +21,7 @@
 					<tr>
 						<th>Titulo</th>
 						<th>Mensaje</th>
+						<th>Categoria</th>
 						<th>Creado El</th>
 					</tr>
 				</thead>
@@ -30,6 +31,7 @@
 						<tr>
 							<td>{{ $com->title }}</td>
 							<td>{{ substr(strip_tags($com->body), 0, 50) }}{{ strlen(strip_tags($com->body)) > 50 ? "..." : "" }}</td>
+							<td>{{ $como->categoria->name }}</td>
 							<td>{{ date('M j, Y', strtotime($com->created_at)) }}</td>
 							<td>
 								<div class="btn-group">
