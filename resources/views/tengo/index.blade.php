@@ -25,7 +25,7 @@
 				</thead>
 				<tbody>
 				@foreach($teng as $tengo)
-					@can('owner', $tengo)
+					{{-- @can('owner', $tengo) --}}
 						<tr>
 							<td>{{ $tengo->title }}</td>
 							<td>{{ substr(strip_tags($tengo->body), 0, 50) }}{{ strlen(strip_tags($tengo->body)) > 50 ? "..." : "" }}</td>
@@ -37,7 +37,7 @@
 								</div>
 							</td>
 						</tr>
-					@endcan
+					{{-- @endcan --}}
 				@endforeach
 				</tbody>
 			</table>

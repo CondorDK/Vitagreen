@@ -24,9 +24,9 @@ class ComoController extends Controller
 
     public function index(Request $request)
     {
-        $com = Como::where('user_id', $request->user()->id)->get();
+        $como = Como::all();
         return view('como.index',[
-            'com' => $com
+            'como' => $como
             ]);
     }
 
@@ -113,7 +113,7 @@ class ComoController extends Controller
      */
     public function update(Request $request, Como $como)
     {
-        $this->authorize('owner', $como);
+        // $this->authorize('owner', $como);
         $como->update($request->all());
         return redirect('/como')->with('success','Post actualizado correctamente :3');
     }
@@ -126,7 +126,7 @@ class ComoController extends Controller
      */
     public function destroy(Como $como)
     {
-        $this->authorize('owner', $como);
+        // $this->authorize('owner', $como);
         $como->delete();
         return redirect('/como')->with('success','Post Eliminado correctamente :3');
     }

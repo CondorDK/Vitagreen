@@ -133,7 +133,7 @@
 
      <!-- ============================  Title Separator Starts ============================ -->
 
-     <section class="title-separator">
+{{--      <section class="title-separator">
       <div class="container">
         <div class="row">
           <div class="span12">
@@ -141,7 +141,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
     <!-- ============================  Title Separator Ends ============================ -->
 
@@ -149,4 +149,4 @@
     <!-- ============================  Recent Posts Start ============================ -->
 
 
-        @endsection
+@endsection

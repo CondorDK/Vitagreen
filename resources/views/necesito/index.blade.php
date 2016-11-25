@@ -25,7 +25,7 @@
 				</thead>
 				<tbody>
 				@foreach($necesit as $necesito)
-					@can('owner', $necesito)
+					{{-- @can('owner', $necesito) --}}
 						<tr>
 							<td>{{ $necesito->title }}</td>
 							<td>{{ substr(strip_tags($necesito->body), 0, 50) }}{{ strlen(strip_tags($necesito->body)) > 50 ? "..." : "" }}</td>
@@ -37,7 +37,7 @@
 								</div>
 							</td>
 						</tr>
-					@endcan
+					{{-- @endcan --}}
 				@endforeach
 				</tbody>
 			</table>

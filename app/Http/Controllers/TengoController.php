@@ -24,7 +24,7 @@ class TengoController extends Controller
     
     public function index(Request $request)
     {
-        $teng = Tengo::where('user_id', $request->user()->id)->get();
+        $teng = Tengo::all();
         return view('tengo.index',[
             'teng' => $teng
             ]);
@@ -88,7 +88,7 @@ class TengoController extends Controller
      */
     public function update(Request $request, Tengo $tengo)
     {
-        $this->authorize('owner', $tengo);
+        // $this->authorize('owner', $tengo);
         $tengo->update($request->all());
         return redirect('/tengo')->with('success','Post actualizado correctamente :3');
     }
@@ -101,7 +101,7 @@ class TengoController extends Controller
      */
     public function destroy(Tengo $tengo)
     {
-        $this->authorize('owner', $tengo);
+        // $this->authorize('owner', $tengo);
         $tengo->delete();
         return redirect('/tengo')->with('success','Post Eliminado correctamente :3');
     }

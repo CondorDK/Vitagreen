@@ -63,7 +63,7 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li><span class="list-circle"></span><a href="{{ url('/profile') }}"><i class="fa fa-btn fa-user"></i>Perfil</a></li>
-                                <li><span class="list-circle"></span><a href="{{ url('/como') }}"><i class="fa fa-btn fa-cube"></i>Materiales</a></li>
+                                <li><span class="list-circle"></span><a href="{{ url('/materiales') }}"><i class="fa fa-btn fa-cube"></i>Materiales</a></li>
                                 <li><span class="list-circle"></span><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Salir</a></li>
                             </ul>
                         </li>
@@ -87,6 +87,15 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/libraries/plugins.js"></script>
   <script src="js/main.js"></script>
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+
+<script>
+    tinymce.init({
+        selector:'textarea',
+        plugins:'link code',
+        menubar: false
+    });
+</script>
 
 <section class="subfooter">
   <div class="container">

@@ -22,7 +22,7 @@ Route::resource('categorias','CategoriaController', ['except' => ['create']]);
 	
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/materiales', 'HomeController@index');
 
 /*
 |--------------------------------------------------------------------------
