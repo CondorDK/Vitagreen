@@ -24,7 +24,7 @@ class ComoController extends Controller
 
     public function index(Request $request)
     {
-        $como = Como::all();
+        $como = Como::with('categoria')->get();
         return view('como.index',[
             'como' => $como
             ]);
@@ -61,6 +61,8 @@ class ComoController extends Controller
         $como->title = $request->title;
         $como->body = $request->body;
         $como->categoria_id = $request->categoria_id;
+        $user = \Auth::user();
+        $como->user_id = $user->id;
 
         //guardar imagen
         if ($request->hasFile('featured_image')){

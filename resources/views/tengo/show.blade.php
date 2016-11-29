@@ -8,7 +8,7 @@
 	<div class="row">
 		<div class="col-md-8">
 			<h1>{{ $tengo->title }}</h1>
-			
+
 			<p class="lead">{!! $tengo->body !!}</p>
 			<hr>
 			<p>Posteado en: {{ $tengo->categoria->name }}</p>
@@ -33,6 +33,7 @@
 				</dl>
 				<hr>
 				<div class="row">
+					@if(Auth::user()==$tengo->user)
 					<div class="col-sm-6">
 						{!! Html::linkRoute('tengo.edit', 'Editar', array($tengo->id), array('class' => 'btn btn-primary btn-block')) !!}
 					</div>
@@ -43,8 +44,9 @@
 
 						{!! Form::close() !!}
 					</div>
+					@endif
 				</div>
-				<div class="row">	
+				<div class="row">
 					<div class="col-md-12">
 						{!! Html::linkRoute('tengo.index', '<< Volver', array($tengo->id), array('class' => 'btn btn-info btn-block')) !!}
 					</div>

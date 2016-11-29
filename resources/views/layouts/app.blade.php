@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{{ url('/') }}">
-                  <img src="images/vita.png" alt="logo" width="110" height="110">
+                  <img src="/images/vita.png" alt="logo" width="110" height="110">
                 </a></ul>
                 <!-- <Menus y mierdas> -->
                 <ul class="nav navbar-nav navbar-right">

@@ -33,6 +33,7 @@
 				</dl>
 				<hr>
 				<div class="row">
+					@if(Auth::user()==$necesito->user)
 					<div class="col-sm-6">
 						{!! Html::linkRoute('necesito.edit', 'Editar', array($necesito->id), array('class' => 'btn btn-primary btn-block')) !!}
 					</div>
@@ -43,6 +44,7 @@
 
 						{!! Form::close() !!}
 					</div>
+					@endif
 				</div>
 				<div class="row">
 					<div class="col-md-12">

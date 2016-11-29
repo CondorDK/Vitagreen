@@ -9,7 +9,7 @@
 		<div class="col-md-8">
 			<img src="/images/{{$como->image}}" height="300" width="600"/>
 			<h1>{{ $como->title }}</h1>
-			
+
 			<p class="lead">{!! $como->body !!}</p>
 			<hr>
 			<p>Posteado en: {{ $como->categoria->name }}</p>
@@ -34,6 +34,7 @@
 				</dl>
 				<hr>
 				<div class="row">
+					@if(Auth::user()==$como->user)
 					<div class="col-sm-6">
 						{!! Html::linkRoute('como.edit', 'Editar', array($como->id), array('class' => 'btn btn-primary btn-block')) !!}
 					</div>
@@ -44,8 +45,9 @@
 
 						{!! Form::close() !!}
 					</div>
+					@endif
 				</div>
-				<div class="row">	
+				<div class="row">
 					<div class="col-md-12">
 						{!! Html::linkRoute('como.index', '<< Volver', array($como->id), array('class' => 'btn btn-info btn-block')) !!}
 					</div>

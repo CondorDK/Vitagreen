@@ -34,8 +34,10 @@
 							<td>{{ $necesito->categoria->name }}</td>
 							<td>{{ date('M j, Y', strtotime($necesito->created_at)) }}</td>
 							<td>
+								@if(Auth::user()==$necesito->user)
 								<div class="btn-group">
 									{{ link_to_route('necesito.edit', $title = 'Editar', $parameter = $necesito, $attributes = ['class' => 'btn btn-primary btn-sm']) }}
+									@endif
 									{{ link_to_route('necesito.show', $title = 'Ver', $parameter = $necesito, $attributes = ['class' => 'btn btn-info btn-sm']) }}
 								</div>
 							</td>

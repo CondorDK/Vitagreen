@@ -49,7 +49,7 @@ class NecesitoController extends Controller
     public function store(NecesitoRequest $request)
     {
         $request->user()->necesitos()->create($request->all());
-        return redirect()->route('necesito.show', $request->id)->with('success','Post creado correctamente :3');
+        return redirect()->route('necesito.show', $request->id)->with('success','Post creado correctamente');
     }
 
     /**

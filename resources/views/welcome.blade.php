@@ -8,27 +8,19 @@
           <div class="flex-viewport" style="overflow: hidden; position: relative; height: 0px;"><ul class="slides" style="width: 1000%; transition-duration: 1s; transform: translate3d(-2276px, 0px, 0px);">
             <li class="clone" style="width: 1138px; float: left; display: block;">
               <img src="images/slides1.png" alt="img">
-                <!--<div class="captions">
-                  <p class="description">Biscuit gummies pudding cookie wypas macaroon.</p>
-                    </div>  end captions -->
+
                     </li>
                     <li class="clone" style="width: 1138px; float: left; display: block;">
                       <img src="images/slides2.png" alt="img">
-                      <!--<div class="captions">
-                          <p class="description">Biscuit gummies pudding cookie wypas macaroon.</p>
-                      </div>  end captions -->
+
                     </li>
                     <li style="width: 1138px; float: left; display: block;" class="flex-active-slide">
                       <img src="images/slides3.png" alt="img">
-                      <!--<div class="captions">
-                          <p class="description">Biscuit gummies pudding cookie wypas macaroon.</p>
-                      </div>  end captions -->
+
                     </li>
                     <li style="width: 1138px; float: left; display: block;" class="">
                       <img src="images/slides4.png" alt="img">
-                      <!--<div class="captions">
-                          <p class="description">Biscuit gummies pudding cookie wypas macaroon.</p>
-                      </div>  end captions -->
+
                     </li>
                   </ul>
                 </div>
@@ -80,7 +72,7 @@
 
                 <div class="feature-content">
                   <h5 class="title"><span>Recicla Metal</span></h5>
-                  <p class="content">Applicake pudding faworki halvaroon icing sugar plum cake powderi  jujubes pastry </p>
+                  <p class="content">Su reciclaje y reutlización son indispensables para evitar seguir extrayendo estos metales. El aluminio, por ejemplo, puede reciclarse infinitas veces y nunca pierde su calidad. </p>
                 </div> <!-- end feature-content -->
               </div> <!-- end feature -->
             </li>

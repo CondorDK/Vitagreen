@@ -34,8 +34,10 @@
 							<td>{{ $tengo->categoria->name }}</td>
 							<td>{{ date('M j, Y', strtotime($tengo->created_at)) }}</td>
 							<td>
+								@if(Auth::user()==$tengo->user)
 								<div class="btn-group">
 									{{ link_to_route('tengo.edit', $title = 'Editar', $parameter = $tengo, $attributes = ['class' => 'btn btn-primary btn-sm']) }}
+									@endif
 									{{ link_to_route('tengo.show', $title = 'Ver', $parameter = $tengo, $attributes = ['class' => 'btn btn-info btn-sm']) }}
 								</div>
 							</td>
