@@ -46,6 +46,9 @@
 				@endforeach
 				</tbody>
 			</table>
+			<div class="text-center">
+				{!!	$teng->links();	!!}
+			</div>
 		</div>
 
 @endsection

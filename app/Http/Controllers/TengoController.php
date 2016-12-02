@@ -21,10 +21,10 @@ class TengoController extends Controller
         $this->middleware('auth');
     }
 
-    
+
     public function index(Request $request)
     {
-        $teng = Tengo::all();
+        $teng = Tengo::paginate(10);
         return view('tengo.index',[
             'teng' => $teng
             ]);

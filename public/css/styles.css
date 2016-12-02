@@ -2586,10 +2586,10 @@ footer a.totop:hover {
     right: 252px;
   }
   .flexslider:hover .flex-prev {
-    left: 243px;
+    left: 20px;
   }
   .flexslider:hover .flex-next {
-    right: 252px;
+    right: 20px;
   }
   .flex-direction-nav a {
     bottom: 13px;
@@ -2634,7 +2634,7 @@ footer a.totop:hover {
     right: 126px;
   }
   .flexslider:hover .flex-prev {
-    left: 153px;
+    left: 13px;
   }
   .flexslider:hover .flex-next {
     right: 126px;

@@ -24,7 +24,7 @@ class ComoController extends Controller
 
     public function index(Request $request)
     {
-        $como = Como::with('categoria')->get();
+        $como = Como::with('categoria')->paginate(10);
         return view('como.index',[
             'como' => $como
             ]);

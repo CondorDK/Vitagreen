@@ -22,7 +22,7 @@ class NecesitoController extends Controller
 
     public function index(Request $request)
     {
-        $necesit = Necesito::all();
+        $necesit = Necesito::paginate(10);
 
         return view('necesito.index',[
             'necesit' => $necesit

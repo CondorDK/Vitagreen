@@ -5,7 +5,7 @@
 		<div class='row'>
 			<div class='col-md-8 col-md-offset-2'>
 				<center>
-					<h1>Necesito</h1>
+					<h1>Tengo</h1>
 					<h3>Crear nueva entrada</h3></center>
 					@include('alerts.errors')
 
