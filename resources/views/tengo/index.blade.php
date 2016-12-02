@@ -29,7 +29,7 @@
 				@foreach($teng as $tengo)
 					{{-- @can('owner', $tengo) --}}
 						<tr>
-							<td>{{ $tengo->title }}</td>
+							<td><strong>{{ $tengo->title }}</strong></td>
 							<td>{{ substr(strip_tags($tengo->body), 0, 50) }}{{ strlen(strip_tags($tengo->body)) > 50 ? "..." : "" }}</td>
 							<td>{{ $tengo->categoria->name }}</td>
 							<td>{{ date('M j, Y', strtotime($tengo->created_at)) }}</td>

@@ -51,7 +51,7 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-            <h5 class="title center"><span>Descubrí nuestros servicios</span></h5>
+            <h5 class="title center"><span>Algunos reciclables</span></h5>
           </div> <!-- end span12 -->
         </div> <!-- end row -->
       </div> <!-- end container -->
