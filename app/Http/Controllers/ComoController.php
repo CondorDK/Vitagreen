@@ -69,7 +69,7 @@ class ComoController extends Controller
             $image = $request->file('featured_image');
             $filename = time() . '.' . $image->getClientOriginalExtension();
             $location = public_path('images/' . $filename);
-            Image::make($image)->resize(800, 400)->save($location);
+            Image::make($image)->save($location);
 
             $como->image = $filename;
         }

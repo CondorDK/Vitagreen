@@ -33,6 +33,21 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #2d2d2d;
     background-color: #f1f3f5;
+    position: absolute;
+    min-height: 100%;
+}
+
+.content-wrapper {
+  min-height: calc(100% - 172px);
+}
+
+.table {
+  background: rgba(241, 248, 224, 0.5);
+  margin: 30px 0;
+}
+
+.table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 h1,
