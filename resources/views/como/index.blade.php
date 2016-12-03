@@ -12,9 +12,8 @@
 				<div class="col-md-4">
 					<a href="{{ route('como.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing glyphicon glyphicon-plus">   Crear Nueva Entrada</a>
 				</div>
-				<div class="col-md-12">
-				</div>
 			</div>
+			<div class="col-md-12">
 			<table class="table">
 				<thead>
 					<tr>
@@ -45,9 +44,12 @@
 				@endforeach
 				</tbody>
 			</table>
+		</div>
+		<div class="col-md-12">
 			<div class="text-center">
 				{!!	$como->links();	!!}
 			</div>
+		</div>
 		</div>
 
 

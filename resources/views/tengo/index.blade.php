@@ -12,9 +12,7 @@
 				<div class="col-md-4">
 					<a href="{{ route('tengo.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing glyphicon glyphicon-plus">Crear nueva entrada</a>
 				</div>
-				<div class="col-md-12">
-
-			</div>
+			<div class="col-md-12">
 			<table class="table">
 				<thead>
 					<tr>
@@ -45,9 +43,13 @@
 				@endforeach
 				</tbody>
 			</table>
+		</div>
+		<div class="col-md-12">
 			<div class="text-center">
 				{!!	$teng->links();	!!}
 			</div>
 		</div>
+		</div>
+
 
 @endsection
