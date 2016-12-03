@@ -13,8 +13,7 @@
 					<a href="{{ route('tengo.create') }}" class="btn btn-lg btn-block btn-primary btn-h1-spacing glyphicon glyphicon-plus">Crear nueva entrada</a>
 				</div>
 				<div class="col-md-12">
-					<hr>
-				</div>
+
 			</div>
 			<table class="table">
 				<thead>
