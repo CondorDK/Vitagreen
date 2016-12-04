@@ -1,66 +1,51 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Ingresar</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">Email</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
+<div class="clear"></div>
+    <div id="main_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <h1 style="text-align:center; margin-top:40px;">Ingresar:</h1>
+                </div>
+            </div>
+    <div style="background:#ffffff; border-radius:3px; padding:10px; margin:0px auto; width:400px; text-align:center; padding:25px; margin-bottom:20px; border:1px solid #e5e5e5">
+        <img src="/images/login-icon.png" style="width:100px; margin:0px auto; margin-bottom:10px; background:rgba(0, 0, 0, 0.05); border-radius:50px; border:1px solid #e5e5e5" class="animated fadeIn">
+            <form method="post" action="{{ url('/login') }}" class="form-signin">
+                {{ csrf_field() }}
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                    <input type="email" class="form-control" placeholder="Email" tabindex="0" id="email" name="email" value="{{ old('email') }}">
+                        @if ($errors->has('email'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('email') }}</strong>
+                            </span>
+                        @endif
+                </div>
+                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                    <input type="password" class="form-control" placeholder="Constraseña" id="password" name="password">
+                        @if ($errors->has('password'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
+                        @endif
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="remember">Recordarme
+                            </label>
                         </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Constraseña</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password">
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember">Recordarme
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-sign-in"></i> Ingresar
-                                </button>
-
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">Olvidaste tu contraseña?</a>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                    <button class="btn btn-lg btn-primary btn-block loaderOnClick" type="submit">
+                    <i class="fa fa-btn fa-sign-in"></i>Ingresar</button>
+                    <br>
+                        <input type="hidden" id="redirect" name="redirect" value="">
+                        <a href="{{ url('/register') }}">o Registrarse</a><span style="color:#ddd; padding:0px 10px"> / </span>
+                        <a href="{{ url('/password/reset') }}">Olvidaste tu contraseña?</a>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 @endsection

@@ -20,6 +20,7 @@
     <!-- Stilos de bootstrap -->
     <link href="{{{ asset('/css/bootstrap.min.css') }}}" rel="stylesheet">
     <link href="{{{ asset('/css/bootstrap-responsive.min.css') }}}" rel="stylesheet">
+    <link href="{{{ asset('/css/animate.min.css') }}}" rel="stylesheet">
     <!-- Main Css -->
     <link href="{{{ asset('/css/styles.css') }}}" rel="stylesheet">
 
@@ -34,8 +35,8 @@
     </style>
 </head>
 <section class="main-nav">
-    <nav class="navbar">
         <div class="container">
+    <nav class="navbar">
             <div class="navbar-inner">
 
                 <!-- Collapsed Hamburger -->
@@ -48,7 +49,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                   <img src="/images/vita.png" alt="logo" width="110" height="110">
                 </a></ul>
-                <!-- <Menus y mierdas> -->
+                <!-- <Menus > -->
                 <ul class="nav navbar-nav navbar-right">
 
                     @if (Auth::guest())
@@ -91,6 +92,7 @@
   <script src="js/libraries/plugins.js"></script>
   <script src="js/main.js"></script>
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+<script src="js/analytics.js"></script>
 
 <script>
     tinymce.init({
@@ -99,6 +101,7 @@
         menubar: false
     });
 </script>
+
 
 <section class="subfooter">
   <div class="container">

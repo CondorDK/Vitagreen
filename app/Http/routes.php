@@ -35,7 +35,10 @@ Route::get('/materiales', 'HomeController@index');
         'uses' => 'UserController@profile',
         'as' => 'profile'
     ]);
-	Route::post('/profile', 'UserController@update_avatar');
+    Route::post('/updateperfil', [
+        'uses' => 'UserController@update_avatar',
+        'as' => 'account.save'
+    ]);
 
     Route::get('/EditarPerfil', [
         'uses' => 'UserController@getAccount',

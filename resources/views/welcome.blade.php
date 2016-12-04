@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <section class="flexslider-container container">
     <div class="row">
       <div class="span12">

@@ -18,51 +18,25 @@ class UserController extends Controller
         return view('auth.profile', array('user' => Auth::user()));
     }
     
-    public function update_avatar(Request $request){
-
-        //Se Encarga de manejar la carga de los avatares para los usuarios
-        if($request->hasFile('avatar')){
-            $avatar = $request->file('avatar');
-            $filename = time() . '.' . $avatar->getClientOriginalExtension();
-            Image::make($avatar)->resize(300, 300)->save( public_path('/uploads/avatars/' . $filename) );
-
-            $user = Auth::user();
-            $user->avatar = $filename;
-            $user->save();
-
-        return view('auth.profile', array('user' => Auth::user()));
-
-        }
-    }
-
     public function getAccount()
     {
         return view('auth.account', ['user' => Auth::user()]); 
     }
-
     public function postSaveAccount(Request $request)
     {
         $this->validate($request, [
            'name' => 'required|max:120'
         ]);
-
         $user = Auth::user();
         $user->name = $request['name'];
+        $user->email = $request['email'];
         $user->update();
-
-        $file = $request->file('image');  
-        $filename = $request['name'] . '-' . $user->id . '.jpg'; 
-
-        if ($file) {
-            Storage::disk('local')->put($filename, File::get($file)); 
-        }
+        $avatar = $request->file('avatar'); 
+        $filename = time() . '.' . $avatar->getClientOriginalExtension(); 
+        Image::make($avatar)->resize(300, 300)->save( public_path('/uploads/avatars/' . $filename) );
+        $user->avatar = $filename;
+        $user->save();
         return redirect()->route('profile');
-    }
-
-    public function getUserImage($filename)
-    {
-        $file = Storage::disk('local')->get($filename);
-        return new Response($file, 200);
     }
 
 }

@@ -63,7 +63,7 @@
 <br>
 <br>
 <br>
-<hr>
+
 
 
 @endsection

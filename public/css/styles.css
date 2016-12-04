@@ -1,3 +1,4 @@
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700);
 
 
@@ -283,7 +284,16 @@ figure {
   border-top: 2px solid #51862F;
   box-shadow: none;
 }
-
+.navbar-default {
+    min-height: 60px;
+    padding-right: 0;
+    background: rgba(241, 248, 224, 0.5)!important;
+    border-color: transparent;
+    background-image: none;
+    border-radius: 3px;
+    filter: none;
+    box-shadow: none;
+}
 /*
 |--------------------------------------------------------------------------
 | FlexSlider Styles
@@ -1034,7 +1044,7 @@ footer .footer-widget .social-icons li:hover {
 .subfooter {
   padding: 10px 0 5px;
   background-color: #B2C08A;
-  border-top: 1px solid #fff;
+
 }
 
 .subfooter p.rights {
@@ -2643,16 +2653,16 @@ footer a.totop:hover {
     margin-right: 15px;
   }
   .flex-direction-nav .flex-prev {
-    left: 153px;
+    left: 20px;
   }
   .flex-direction-nav .flex-next {
-    right: 126px;
+    right: 20px;
   }
   .flexslider:hover .flex-prev {
     left: 13px;
   }
   .flexslider:hover .flex-next {
-    right: 126px;
+    right: 20px;
   }
   .flex-direction-nav a {
     bottom: 12px;
