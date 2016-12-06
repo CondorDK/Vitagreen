@@ -11,8 +11,8 @@
             <form action="{{ route('account.save') }}" method="post" enctype="multipart/form-data">
                 <div id="user-badge" style="background:#212A34; padding:20px; height:auto;">
                     <img src="/uploads/avatars/{{ $user->avatar }}" style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;">
-                        <label for="avatar" style="color:#ccc;">Avatar</label>
-                            <input type="file" multiple="true" class="form-control" name="avatar">
+                        <label for="avatar" style="color:#ccc;" >Miembro desde:{{ $user->created_at }}</label>
+                            <div class="label label-blue">Email: {{ $user->email }}</div>
                                 <div style="clear:both"></div>
                             </div>
                             <div class="well">
@@ -29,7 +29,6 @@
         </form>
     </div>
 </div>
-
 
 
 @endsection

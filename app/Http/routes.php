@@ -31,19 +31,17 @@ Route::get('/materiales', 'HomeController@index');
 |
 */
 
-	Route::get('/profile', [
+    Route::get('/profile', [
         'uses' => 'UserController@profile',
         'as' => 'profile'
     ]);
-    Route::post('/updateperfil', [
-        'uses' => 'UserController@update_avatar',
-        'as' => 'account.save'
-    ]);
+    Route::post('/profile', 'UserController@update_avatar');
 
     Route::get('/EditarPerfil', [
         'uses' => 'UserController@getAccount',
         'as' => 'account'
     ]);
+
     //Update Account
     Route::post('/updateperfil', [
         'uses' => 'UserController@postSaveAccount',
